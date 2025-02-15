@@ -5,12 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
 </head>
 <body>
 
+    <!-- Navbar & Header -->
+
+    <header>
+        <nav class="navbar">
+            <a href="./index.html" class="nav-branding">
+                <img class="logo" src="./images/logo.svg.svg" alt="">
+            </a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="./about.html" class="nav-link">Financials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Our Business</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link contact">Contact Us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="hamburger-bar"></span>
+                <!-- <span class="bar"></span> -->
+                <span class="hamburger-bar"></span>
+            </div>
+        </nav>
+
+    </header>
+
     <!-- What sets us apart -->
 
-    <img src="https://www.powerup.at/wp-content/uploads/2023/11/biogasanlagen-jpg-webp.webp" alt="">
+    <img class="hero" src="https://www.powerup.at/wp-content/uploads/2023/11/biogasanlagen-jpg-webp.webp" alt="">
 
     <div class="what-sets-us-apart-mobile">
         <h1>What Sets Us Apart</h1>
@@ -67,6 +105,7 @@
 
     <br><br><br><br>
 
+    <!-- GPSR at a glance -->
 
     <div class="gpsr-at-a-glance">
         <div class="gpsr-at-a-glance-head">
@@ -151,6 +190,154 @@
         </div>
 
         <br><br><br><br><br>
+
+        <!-- Our Clientele -->
+
+        <div class="our-client">
+            <h1>Our Clientele</h1>
+            <div class="client-slider" reverse="true"
+                style = "
+                    --client-width: 150px;
+                    --client-height: 150px;
+                    --client-quantity: 9;
+                ">
+                <div class="client-list">
+                    <div class="client-item" style="--client-position: 1"><img src="images/client-1.png" alt=""></div>
+                    <div class="client-item" style="--client-position: 2"><img src="images/client-2.png" alt=""></div>
+                    <div class="client-item" style="--client-position: 3"><img src="images/client-3.png" alt=""></div>
+                    <div class="client-item" style="--client-position: 4"><img src="images/client-4.png" alt=""></div>
+                    <div class="client-item" style="--client-position: 5"><img src="images/client-5.png" alt=""></div>
+                    <div class="client-item" style="--client-position: 6"><img src="images/client-6.png" alt=""></div>
+                    <div class="client-item" style="--client-position: 7"><img src="images/client-7.png" alt=""></div>
+                    <div class="client-item" style="--client-position: 8"><img src="images/client-1.png" alt=""></div>
+                    <div class="client-item" style="--client-position: 9"><img src="images/client-2.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="slider"
+            style = "
+            --width: 200px;
+            --height: 100px;
+            --quantity: 20;
+            "
+        >
+            <div class="list">
+                <div class="item" style="--position: 1"><img src="images/1.png" alt=""></div>
+                <div class="item" style="--position: 2"><img src="images/2.png" alt=""></div>
+                <div class="item" style="--position: 3"><img src="images/3.png" alt=""></div>
+                <div class="item" style="--position: 4"><img src="images/4.png" alt=""></div>
+                <div class="item" style="--position: 5"><img src="images/5.png" alt=""></div>
+                <div class="item" style="--position: 6"><img src="images/6.png" alt=""></div>
+                <div class="item" style="--position: 7"><img src="images/7.png" alt=""></div>
+                <div class="item" style="--position: 8"><img src="images/1.png" alt=""></div>
+                <div class="item" style="--position: 9"><img src="images/2.png" alt=""></div>
+                <div class="item" style="--position: 10"><img src="images/3.png" alt=""></div>
+                <div class="item" style="--position: 11"><img src="images/4.png" alt=""></div>
+                <div class="item" style="--position: 12"><img src="images/5.png" alt=""></div>
+                <div class="item" style="--position: 13"><img src="images/6.png" alt=""></div>
+                <div class="item" style="--position: 14"><img src="images/7.png" alt=""></div>
+                <div class="item" style="--position: 15"><img src="images/1.png" alt=""></div>
+                <div class="item" style="--position: 16"><img src="images/2.png" alt=""></div>
+                <div class="item" style="--position: 17"><img src="images/3.png" alt=""></div>
+                <div class="item" style="--position: 18"><img src="images/4.png" alt=""></div>
+                <div class="item" style="--position: 19"><img src="images/5.png" alt=""></div>
+                <div class="item" style="--position: 20"><img src="images/6.png" alt=""></div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- Landmark Projects  -->
+
+    <div class="landmark-projects">
+        <h1 class="landmark-projects-headline">Our Landmark Projects</h1>
+
+        <div class="landmark-projects-container">
+            
+            <div class="landmark-projects-project">
+                <div class="landmark-projects-project-left">
+                    <img class="landmark-projects-project-image" src="./images/indore-landmark-1.png" alt="">
+                </div>
+                <div class="landmark-projects-project-right">
+                    <h2>Indore BioCNG Plant</h2>
+                    <div class="landmark-projects-project-info">
+                        <img class="landmark-projects-icon" src="./images/msw.png" alt="">
+                        <p>Largest MSW-based BioCNG plant in South Asia</p>
+                    </div>
+                    <div class="landmark-projects-project-info">
+                        <img class="landmark-projects-icon" src="./images/landfill.png" alt="">
+                        <p>Impact: 500 tons of waste processed daily, reducing landfill emissions</p>
+                    </div>
+                    <button>Read more <img class="landmark-projects-icon" src="./images/arrow.png" alt=""></button>
+                </div>
+            </div>
+
+            <div class="landmark-projects-project">
+                <div class="landmark-projects-project-left">
+                    <img class="landmark-projects-project-image" src="./images/barabanki-landmark-1.png" alt="">
+                </div>
+                <div class="landmark-projects-project-right">
+                    <h2>Barabanki Plant</h2>
+                    <div class="landmark-projects-project-info">
+                        <img class="landmark-projects-icon" src="./images/msw.png" alt="">
+                        <p>Fastest Commissioned BioCNG Plant</p>
+                    </div>
+                    <div class="landmark-projects-project-info">
+                        <img class="landmark-projects-icon" src="./images/landfill.png" alt="">
+                        <p>Feed cut achieved in 10 months, reinforcing our execution expertise</p>
+                    </div>
+                    <button>Read more <img class="landmark-projects-icon" src="./images/arrow.png" alt=""></button>
+                </div>
+            </div>
+
+            <!-- <div class="landmark-projects-project">
+                <div class="landmark-projects-project-left">
+                    <img class="landmark-projects-project-image" src="./images/jhajjar-landmark-1.png" alt="">
+                </div>
+                <div class="landmark-projects-project-right">
+                    <h2>Jhajjar Plant</h2>
+                    <div class="landmark-projects-project-info">
+                        <img class="landmark-projects-icon" src="./images/msw.png" alt="">
+                        <p>Largest Paddy Straw-Based BioCNG Plant</p>
+                    </div>
+                    <div class="landmark-projects-project-info">
+                        <img class="landmark-projects-icon" src="./images/landfill.png" alt="">
+                        <p> XX tons of waste processed daily, reducing the pollution problem</p>
+                    </div>
+                    <button>Read more <img class="landmark-projects-icon" src="./images/arrow.png" alt=""></button>
+                </div>
+            </div>
+
+            <div class="landmark-projects-project">
+                <div class="landmark-projects-project-left">
+                    <img class="landmark-projects-project-image" src="./images/jhajjar-landmark-1.png" alt="">
+                </div>
+                <div class="landmark-projects-project-right">
+                    <h2>Jhajjar Plant</h2>
+                    <div class="landmark-projects-project-info">
+                        <img class="landmark-projects-icon" src="./images/msw.png" alt="">
+                        <p>Largest Paddy Straw-Based BioCNG Plant</p>
+                    </div>
+                    <div class="landmark-projects-project-info">
+                        <img class="landmark-projects-icon" src="./images/landfill.png" alt="">
+                        <p> XX tons of waste processed daily, reducing the pollution problem</p>
+                    </div>
+                    <button>Read more <img class="landmark-projects-icon" src="./images/arrow.png" alt=""></button>
+                </div>
+            </div> -->
+
+
+        </div>
     </div>
+    <div class="landmark-projects-button">
+        <button>View All Projects <img class="landmark-projects-icon" src="./images/arrow.png" alt=""> </button>
+    </div>  
+    
+    
+    <br><br><br><br><br>
+
+
+
+
 </body>
 </html>
