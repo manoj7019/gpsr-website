@@ -18,7 +18,7 @@
 
 
 const counts = document.querySelectorAll('.count');
-const speed = 100;
+const speed = 110;
 
 function runCounter() {
     counts.forEach((counter) => {

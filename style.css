@@ -37,10 +37,11 @@ html {
 
 
 .header-one {
-    --__animationStartsAfter: 480vh;
-    --__animationDistance: 490vh;
+    --__animationStartsAfter: 110vh;
+    --__animationDistance: 120vh;
     /* --__surfaceColorStart: hsla(0, 12%, 5%, 0.952); */
-    --__surfaceColorStart: rgb(0, 0, 0);
+    /* --__surfaceColorStart: rgb(0, 0, 0); */
+    --__surfaceColorStart: hsla(0, 0%, 0%, 1);
     --__surfaceColorEnd: hsla(0, 0%, 100%, 0.747);
     --__textColorStart: white;
     --__textColorEnd: black;
@@ -170,7 +171,7 @@ a {
 }
 
 .nav-link {
-    /* transition: 0.7s ease-in-out; */
+    transition: none;
 }
 
 .nav-link:hover {
@@ -264,7 +265,7 @@ body, html {
 .hero-video {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.603);
 }
@@ -273,7 +274,7 @@ body, html {
     top: 50%;
     left: 50%;
     width: 100%;
-    height: 100%;
+    height: 80vh;
     object-fit: cover;
     transform: translate(-50%, -50%);
     z-index: -1;
@@ -310,8 +311,17 @@ body, html {
     width: 20%;
 }
 
-.hero-buttons:nth-child() {
+.hero-button-anchor.secondary {
     background-color: white;
+}
+
+.hero-button {
+    cursor: pointer;
+}
+
+.hero-button.secondary {
+    background-color: white;
+    color: darkgreen;
 }
 
 /* What sets-us-apart */
@@ -534,6 +544,7 @@ h2 {
     align-items: center;
     background: rgba(211, 211, 211, 0.24);
     padding: 96px 0;
+    z-index: 1000;
 }
 
 .gpsr-at-a-glance-head {
@@ -664,6 +675,73 @@ h2 {
     background-size: 100% 100%;
 }
 
+/* JV and Partnerships  */
+
+.jv-center {
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.jv-content {
+    width: 100vh;
+    height: 100vw;
+    position: relative;
+    transform-origin: left top;
+    transform: rotateZ(-90deg) translateX(-100%);
+    overflow: auto;
+}
+
+.jv-nav {
+    width: 100vh;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+}
+
+.jv-logo {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(0, -50%) rotate(90deg);
+}
+
+.jv-title {
+    font-size: 16px;
+    margin: 0 20px;
+}
+
+.jv-page {
+    width: 100vh;
+    height: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    background: white;
+    color: black;
+}
+
+.jv-page:nth-child(even) {
+    background: black;
+    color: white;
+}
+
+.jv-page-content {
+    transform: rotate(90deg);
+}
+
+.jv-content::-webkit-scrollbar {
+    display: none;
+}
+
 /* Our Climate Impact  */
 
 .our-climate-impact {
@@ -676,7 +754,8 @@ h2 {
 }
 
 .our-climate-impact-one > .headline {
-    font-size: 72px;
+    font-size: 48px;
+    font-weight: 600;
 }
 
 /* .our-climate-impact-two {
@@ -705,7 +784,7 @@ h2 {
     text-align: center;
     /* border-bottom: 8px solid #45085a; */
     border-radius: 12px;
-    background-color: #46085a18;
+    background-color: black;
     padding: 24px;
 }
 
@@ -731,6 +810,8 @@ h2 {
 }
 
 .counter-icon {
+    width: 4rem;
+    height: 4rem;
     margin-bottom: 32px;
 }
 
@@ -909,7 +990,7 @@ h2 {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 8px 16px;
+        padding: 8px;
         gap: 32px;
     }
 
@@ -917,7 +998,7 @@ h2 {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 8px;
+        /* border-radius: 8px; */
         padding-bottom: 96px;
         background: rgba(211, 211, 211, 0.212);;
     }
@@ -1131,6 +1212,11 @@ body {
     gap: 16px;
 }
 
+.footer-links > a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 .social-icons {
     display: flex;
     gap: 16px;
@@ -1144,5 +1230,3 @@ body {
     height: 32px;
     width: 32px;
 }
-
-
