@@ -303,6 +303,15 @@ body, html {
 .hero-content h1 {
     font-size: 72px;
     margin: 0;
+    margin-bottom: 10px;
+}
+
+/* #green {
+    color: greenyellow;
+} */
+
+.hero-content h2 {
+    color: rgba(255, 255, 255, 0.705);
 }
 
 .hero-buttons {
@@ -915,6 +924,7 @@ h2 {
 .our-climate-impact-one > .headline {
     font-size: 48px;
     font-weight: 600;
+    margin-bottom: 24px;
 }
 
 /* .our-climate-impact-two {
@@ -1243,6 +1253,8 @@ h2 {
         align-items: center;
         padding: 8px;
         gap: 32px;
+        border-radius: 8px;
+        /* box-shadow: 2px 0px 10px rgba(128, 128, 128, 0.322); */
     }
 
     .landmark-projects-button {
