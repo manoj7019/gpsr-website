@@ -341,7 +341,7 @@ body, html {
 :root {
     --apart-cards: 5;
     --apart-cardHeight: 20em;
-    --apart-cardTopPadding: 1rem;
+    --apart-cardTopPadding: 1.5rem;
     --apart-cardMargin: 1rem;
 }
 
