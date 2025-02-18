@@ -16,6 +16,13 @@ html > body {
     background-color: white;
 }
 
+#subheadline {
+    font-size: 48px;
+    padding: 0 128px;
+    text-align: center;
+    color: green;
+}
+
 html {
     font-family: 'Montserrat', sans-serif;
 }
@@ -345,22 +352,26 @@ body, html {
 .what-sets-us-apart {
     position: sticky;
     margin-top: 32px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 2em;
+    padding: 96px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    /* align-items: flex-start; */
+    align-items: center;
     gap: 32px;
+    /* background: url(./images/jv-background.jpg); */
+    background-color: rgba(128, 128, 128, 0.13);
 }
 
 .what-sets-us-apart > .left {
     /* margin-top: 24px; */
     width: 50%;
     position: sticky;
-    top: 0;
-    margin-top: 128px;
-    align-self: flex-start; /* Ensure the sticky element aligns at the top */
+    top: 10rem;
+    /* margin-top: 128px; */
+    align-self: flex-start;
+    ; /* Ensure the sticky element aligns at the top */
 
     display: flex;
     flex-direction: column;
@@ -373,6 +384,8 @@ body, html {
     width: 50%;
 }
 
+
+/* For Mobile Screen */
 @media screen and (max-width: 768px) {
     .what-sets-us-apart {
         display: flex;
@@ -389,6 +402,30 @@ body, html {
     }
 }
 
+/* For Desktop Screen  */
+
+@media screen and (min-width: 1500px) {
+    .what-sets-us-apart {
+        display: flex;
+        /* flex-direction: column; */
+    }
+    .what-sets-us-apart > .left {
+        margin-top: 240px;
+        width: 50%;
+        /* height: 100vh; */
+        position: sticky;
+        top: 15rem;
+        /* margin-top: 128px; */
+        /* align-self: center; */
+         /* Ensure the sticky element aligns at the top */
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
 
 .what-sets-us-apart > .left {
     width: 100%;
@@ -447,7 +484,7 @@ body, html {
 
 .apart-card {
     position: sticky;
-    top: 0;
+    top: 6rem;
     padding-top: calc(var(--index) * var(--apart-cardTopPadding));
 }
 
@@ -537,18 +574,24 @@ h2 {
     } 
 }
 
-.joint-venture-card, .partnership-card {
+.joint-venture-card, .partnership-card, .our-business-body {
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
 
+.joint-venture-and-partnership-section {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 98px;
+}
 
 .joint-venture-section, .partnership-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 84px 48px;
+    /* background: url(./images/jv-background.jpg); */
 }
 
 .joint-venture-section-cards {
@@ -562,6 +605,7 @@ h2 {
     flex-direction: column;
     gap: 16px;
     padding: 16px;
+    background: white;
     /* border: 1px solid gray; */
     box-shadow: 1px 2px 10px gray;
 }
@@ -598,7 +642,7 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     align-items: baseline;
-    gap: 8px;
+    gap: 24px;
 }
 
 .partnersip-section-cards {
@@ -902,6 +946,92 @@ h2 {
     margin-bottom: 32px;
 }
 
+/* Our Business  */
+
+.our-business {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    background: rgba(128, 128, 128, 0.103);
+    padding: 72px;
+}
+
+.our-business-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-business-image {
+    width: 600px;
+}
+
+.our-business-body {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry -50% cover 50%;
+}
+
+.our-business-body {
+    display: flex;
+}
+
+.our-business-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.our-business-buttons-top, .our-business-buttons-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+
+.our-business-button.one, .our-business-button.five {
+    margin-left: -300px;
+}
+
+.our-business-button.three {
+    margin-left: -20px;
+    /* margin-bottom: -40px; */
+}
+
+.our-business-button.two, .our-business-button.four {
+    margin-left: -100px;
+}
+
+.our-business-button > a {
+    display: flex;
+    /* padding: 8px; */
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 16px;
+}
+
+.our-business-button > a > button {
+    /* padding: 0 32px; */
+}
+
+.our-business-button > a:hover {
+    transform: scale(1.05);
+    transition: 0.3s
+}
+
+.our-business-button > a > p {
+    color: black;
+    width: 300px;
+    background-color: rgba(0, 128, 0, 0.185);
+    padding: 8px;
+}
+
+#our-business-button-para {
+    display: none;
+}
+
+.our-business-button > a > button:hover + #our-business-button-para {
+    display: block;
+}
 
 /* Our Clientele */
 
