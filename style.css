@@ -395,7 +395,7 @@ body, html {
 }
 
 .what-sets-us-apart > .left > h2 {
-    font-size: 84px;
+    font-size: 48px;
     color: black;
 }
 
@@ -521,8 +521,93 @@ h2 {
     font-size: 18px;
 }
 
+/* Joint Ventures Section and Partnerships  */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+        /* transform: translateX(-100px); */
+        /* clip-path: inset(100% 100% 0 0) */
+    } to {
+        opacity: 1;
+        scale: 1;
+        /* transform: translateX(0px); */
+        /* clip-path: inset(0 0 0 0) */
+    } 
+}
+
+.joint-venture-card, .partnership-card {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
 
 
+.joint-venture-section, .partnership-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 84px 48px;
+}
+
+.joint-venture-section-cards {
+    display: flex;
+    gap: 32px;
+    padding: 32px;
+}
+
+.joint-venture-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    /* border: 1px solid gray; */
+    box-shadow: 1px 2px 10px gray;
+}
+
+.joint-venture-pic, .partnership-pic {
+    /* height: 350px; */
+    width: 100%;
+    border-radius: 0;
+}
+
+.joint-venture-logo {
+    height: 72px;
+    width: auto;
+    margin: 8px 0;
+}
+
+/* #ioc_gps {
+    height: 48px;
+    margin: 16px 0
+}
+
+#oil_india {
+    height: 56px;
+    margin: 8px 0;
+}
+
+#saf {
+    margin: 16px 0;
+    height: 36px;
+} */
+
+.joint-venture-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.partnersip-section-cards {
+    display: flex;
+    margin: 0 auto;
+    gap: 32px;
+    padding: 32px;
+    width: 66.66666%;
+}
 
 /* GPSR at a Glance */
 
@@ -679,7 +764,7 @@ h2 {
 
 .jv-center {
     width: 100vw;
-    height: 80vh;
+    height: 50vh;
     overflow: hidden;
     cursor: pointer;
 }
@@ -704,6 +789,7 @@ h2 {
     top: 0;
     left: 0;
     mix-blend-mode: difference;
+    margin-left: 150px;
 }
 
 .jv-logo {
@@ -735,6 +821,7 @@ h2 {
 }
 
 .jv-page-content {
+    margin-right: -400px;
     transform: rotate(90deg);
 }
 
