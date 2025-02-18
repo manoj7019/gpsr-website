@@ -329,6 +329,7 @@ body, html {
 
 .hero-button-anchor.secondary {
     background-color: white;
+    width: 20%;
 }
 
 .hero-button {
@@ -593,6 +594,11 @@ h2 {
     } 
 }
 
+.know-more-button {
+    border-radius: 8px;
+    padding-inline:16px;
+}
+
 .joint-venture-card, .partnership-card, .our-business-body {
     animation: appear linear;
     animation-timeline: view();
@@ -628,12 +634,13 @@ h2 {
     /* border: 1px solid gray; */
     /* box-shadow: 1px 2px 10px gray; */
     box-shadow: 2px 0px 10px rgba(128, 128, 128, 0.322);
+    border-radius: 8px;
 }
 
 .joint-venture-pic, .partnership-pic {
     /* height: 350px; */
     width: 100%;
-    border-radius: 0;
+    border-radius: 8px;
 }
 
 .joint-venture-logo {
@@ -1180,6 +1187,7 @@ h2 {
         border-radius: 4px;
         gap: 16px;
         box-shadow: 2px 0px 10px rgba(128, 128, 128, 0.322);
+        border-radius: 8px;
     }
 
     .landmark-projects-project-left {
