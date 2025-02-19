@@ -345,6 +345,15 @@ body, html {
     cursor: pointer;
 }
 
+/* .arrow-icon {
+    display: none;
+}
+
+.hero-button:hover + .arrow-icon {
+    display: block;
+    transition: all 1s ease;
+} */
+
 .hero-button.secondary {
     background-color: white;
     color: darkgreen;
@@ -849,7 +858,7 @@ h2 {
 
 .jv-center {
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
     overflow: hidden;
     cursor: pointer;
 }
