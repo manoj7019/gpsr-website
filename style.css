@@ -277,7 +277,7 @@ body, html {
 .hero-video {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 110vh;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.603);
 }
@@ -286,7 +286,7 @@ body, html {
     top: 50%;
     left: 50%;
     width: 100%;
-    height: 80vh;
+    height: 110vh;
     object-fit: cover;
     transform: translate(-50%, -50%);
     z-index: -1;
@@ -338,7 +338,7 @@ body, html {
 
 .hero-button-anchor.secondary {
     background-color: white;
-    width: 20%;
+    width: 22%;
 }
 
 .hero-button {
@@ -733,7 +733,7 @@ h2 {
 
 
 .gpsr-at-a-glance-card-container {
-    perspective: 1000px;
+    perspective: 2000px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -793,15 +793,19 @@ h2 {
 
 .gpsr-at-a-glance-card1:hover {
     transform: rotateY(180deg);
+    transition: all 1s ease;
 }
 .gpsr-at-a-glance-card2:hover {
     transform: rotateY(180deg);
+    transition: all 1s ease;
 }
 .gpsr-at-a-glance-card3:hover {
     transform: rotateY(180deg);
+    transition: all 1s ease;
 }
 .gpsr-at-a-glance-card4:hover {
     transform: rotateY(180deg);
+    transition: all 1s ease;
 }
 
 
@@ -938,11 +942,13 @@ h2 {
 .our-climate-impact-two {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    padding: 0 48px;
+    /* gap: 16px; */
+    padding: 0;
 }
 
-
+h3 {
+    font-size: 18px;
+}
 
 .counter {
     /* width: 250px; */
@@ -976,6 +982,11 @@ h2 {
 
 .counter-one-counter > h1 {
     color: rgb(6, 226, 6);
+    font-size: 30px;
+}
+
+.sub-para {
+    font-size: 14px;
 }
 
 .counter-icon {
