@@ -792,20 +792,20 @@ h2 {
 }
 
 .gpsr-at-a-glance-card1:hover {
-    transform: rotateY(180deg);
-    transition: all 1s ease;
+    transform: rotateY(190deg);
+    transition: all 0.01s ease;
 }
 .gpsr-at-a-glance-card2:hover {
     transform: rotateY(180deg);
-    transition: all 1s ease;
+    transition: all 0.01s ease;
 }
 .gpsr-at-a-glance-card3:hover {
     transform: rotateY(180deg);
-    transition: all 1s ease;
+    transition: all 0.01s ease;
 }
 .gpsr-at-a-glance-card4:hover {
-    transform: rotateY(180deg);
-    transition: all 1s ease;
+    transform: rotateY(170deg);
+    transition: all 0.01s ease;
 }
 
 
