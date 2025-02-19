@@ -725,7 +725,9 @@ h2 {
 }
 
 .proweps-head h1 {
-    color: rgb(6, 226, 6);;
+    /* color: rgb(6, 226, 6); */
+    /* color: rgb(0,255,0); */
+    color: #6aac00;
 }
 
 .proweps-head > p {
