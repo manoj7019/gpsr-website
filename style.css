@@ -312,6 +312,7 @@ body, html {
 
 .hero-content h2 {
     color: rgba(255, 255, 255, 0.705);
+    /* font-size: 48px; */
 }
 
 .hero-buttons {
@@ -696,6 +697,125 @@ h2 {
     gap: 32px;
     padding: 32px;
     width: 66.66666%;
+}
+
+/* Proweps Section */
+
+.main-grid {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.proweps-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background: black;
+    color: white;
+    align-items: center;
+    padding: 64px 0;
+}
+
+.proweps-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.proweps-head h1 {
+    color: rgb(6, 226, 6);;
+}
+
+.proweps-head > p {
+    padding: 0 96px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.main-grid {
+    display: grid;
+    gap: 24px;
+    /* grid-template-columns: 100px 100px 100px; */
+    /* grid-template-columns: 25% 25% 25%; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4, 1fr);
+    padding: 32px 0;
+    background: black;
+}
+
+.proweps-image {
+    width: 50vw;
+    height: auto;
+    border-radius: 0 8px 8px 0;
+    margin-left: -16px;
+}
+
+.logo1 {
+    height: 128px;
+}
+
+.icon1 {
+    width: 48px;
+}
+
+.icon2 {
+    width: 24px;
+}
+
+.proweps-info {
+    display: flex;
+}
+
+.grid-1 {
+    grid-column: span 2;
+}
+
+.grid-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.grid-3, .grid-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 16px;
+    background: black;
+    color: white;
+}
+
+.grid-3 > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.grid-3 > ul > li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.grid-4 {
+    padding-right: 24px;
+}
+
+.grid-4 > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.grid-4 > ul > li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 /* GPSR at a Glance */
