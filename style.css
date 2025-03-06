@@ -404,7 +404,7 @@ body, html {
 .what-sets-us-apart {
     position: sticky;
     margin-top: 32px;
-    width: 100%;
+    width: 1366px;
     margin: 0 auto;
     padding: 96px;
     display: flex;
@@ -648,6 +648,7 @@ h2 {
 .joint-venture-and-partnership-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 48px;
     padding: 98px;
 }
@@ -656,6 +657,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 1366px;
     /* background: url(./images/jv-background.jpg); */
 }
 
@@ -743,6 +745,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    max-width: 1366px;
 }
 
 .proweps-head h1 {
@@ -760,6 +763,7 @@ h2 {
 .main-grid {
     display: grid;
     gap: 24px;
+    max-width: 1366px;
     /* grid-template-columns: 100px 100px 100px; */
     /* grid-template-columns: 25% 25% 25%; */
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
@@ -1097,6 +1101,7 @@ h2 {
     grid-template-columns: repeat(4, 1fr);
     /* gap: 16px; */
     padding: 0;
+    max-width: 1366px;
 }
 
 h3 {
