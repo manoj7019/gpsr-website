@@ -1625,7 +1625,7 @@ body {
 
 .lp-card-image {
     width: 400px;
-    height: auto;
+    height: 300px;
 }
 
 @media screen and (max-width:769px){
