@@ -1670,6 +1670,11 @@ footer {
     align-items: flex-start;
 }
 
+.footer-left .logo {
+    height: 48px;
+    width: auto;
+}
+
 .footer-right {
     display: flex;
     gap: 64px;
