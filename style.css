@@ -126,12 +126,9 @@ button {
 
 .nav-one-item:hover {
     cursor: pointer;
-    /* color: var(--clr-neutral-400); */
-    /* text-decoration: underline; */
-    font-weight: 700;
-    /* color: white; */
+    font-weight: 800;
     text-underline-offset: 0.171;
-    transform: scale(1.05);
+    transform: scale(1.2);
 }
 
 
