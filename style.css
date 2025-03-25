@@ -395,6 +395,10 @@ body, html {
     --apart-cardMargin: 1rem;
 }
 
+.what-sets-us-apart-whole {
+    background: rgba(128, 128, 128, 0.103);
+}
+
 .what-sets-us-apart-mobile {
     display: none;
 }
@@ -412,7 +416,7 @@ body, html {
     align-items: center;
     gap: 32px;
     /* background: url(./images/jv-background.jpg); */
-    background-color: rgba(128, 128, 128, 0.13);
+    /* background-color: rgba(128, 128, 128, 0.13); */
 }
 
 .what-sets-us-apart > .left {
