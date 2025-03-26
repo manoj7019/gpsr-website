@@ -196,6 +196,7 @@ a {
     font-weight: 600;
     margin-bottom: 8px;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 
 #accordion li label:hover {
@@ -276,16 +277,21 @@ a {
 }
 
 /* Footer */
+footer {
+    width: 100vw;
+    background: black;
+}
 
 .footer-container {
     background-color: black;
     color: white;
     display: flex;
-    width: 100vw;
+    width: 1366px;
     justify-content: space-between;
     /* align-items: center; */
     gap: 48px;
     padding: 48px;
+    margin: 0 auto;
 }
 
 .footer-left {

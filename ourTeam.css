@@ -267,8 +267,8 @@ button.slide-nav-button:hover {
 }
 
 /* Footer  */
-
 footer {
+    width: 100vw;
     background: black;
 }
 
@@ -276,12 +276,11 @@ footer {
     background-color: black;
     color: white;
     display: flex;
-    width: 100vw;
+    width: 1366px;
     justify-content: space-between;
     /* align-items: center; */
     gap: 48px;
     padding: 48px;
-    max-width: 1400px;
     margin: 0 auto;
 }
 

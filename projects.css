@@ -862,15 +862,21 @@ p span {
 
 /* Footer section  */
 
+footer {
+    width: 100vw;
+    background: black;
+}
+
 .footer-container {
     background-color: black;
     color: white;
     display: flex;
-    width: 100vw;
+    width: 1366px;
     justify-content: space-between;
     /* align-items: center; */
     gap: 48px;
     padding: 48px;
+    margin: 0 auto;
 }
 
 .footer-left {
