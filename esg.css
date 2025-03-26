@@ -1,0 +1,718 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#icon3x {
+    width: 84px;
+    height: 84px;
+}
+
+/* Header  */
+
+.header-one {
+    --__animationStartsAfter: 220vh;
+    --__animationDistance: 250vh;
+    --__surfaceColorStart: hsla(0, 0%, 0%, 1);
+    --__surfaceColorEnd: hsla(0, 0%, 100%, 0.747);
+    --__textColorStart: white;
+    --__textColorEnd: black;
+
+    --__logoAfterAnimation: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: var(--__headerWidth, auto);
+    padding: 16px 48px;
+    position: sticky;
+    top: -5rem;
+    color: white;
+    z-index: 1000;
+    animation: stickyNav linear forwards;
+
+    @supports (animation-timeline: view()) {
+        /* backdrop-filter: blur(1rem); */
+
+        animation-timeline: view();
+        animation-range-start: var(--__animationStartsAfter);
+        animation-range-end: var(--__animationDistance);
+    }
+
+    .gpsr-logo {
+        display: var(--__logoDisplay, block);
+        height: 48px;
+        width: auto;
+    }
+
+    .nav-one-links {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.header-one a img {
+    height: 48px;
+    filter: brightness(400%);
+    animation: fadeEffect linear forwards;
+    animation-timeline: scroll();
+    animation-range: 0vh 150vh;
+}
+
+@keyframes fadeEffect {
+    from {
+      filter: brightness(400%);
+    }
+    to {
+      filter: brightness(100%);
+    }
+  }
+
+.nav-one-item > .nav-one-item-anchor {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+    
+}
+
+.nav-one-links {
+    display: flex;
+}
+
+.nav-one-item {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0 24px;
+    text-align: left;
+    list-style-type: none;
+}
+
+.nav-one-item:hover {
+    cursor: pointer;
+    font-weight: 800;
+    text-underline-offset: 0.171;
+    transform: scale(1.2);
+}
+
+
+@keyframes stickyNav {
+    0%, 100% {
+        --__headerWidth: 100%;
+        /* --__logoDisplay: none; */
+    }
+
+    100% {
+        top: 0;
+        color: var(--__textColorEnd);
+        background-color: var(--__surfaceColorEnd);
+        box-shadow:0 0 0.75rem hsl(0 0% 0% / 0.3);
+        /* border-radius: 10px; */
+        backdrop-filter: blur(1rem);
+    }
+}
+
+/*  */
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    font-size: 56px;
+}
+
+#icon2x {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background {
+    transform: translateZ(-9px) scale(2.1);
+    margin-top: -32px;
+}
+
+.midground {
+    transform: translateZ(-7px) scale(1.8)
+}
+
+.title {
+    transform: translateZ(-5px) scale(1.5)
+}
+
+.foreground {
+    transform: translateZ(-0px) scale(1.0)
+}
+
+.background,
+.midground,
+.foreground {
+    position: absolute;
+    height: 120vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+section {
+    /* margin-top: -10px; */
+    z-index: 1000;
+    background: white;
+}
+
+.title {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    font-size: 72px;
+    color: white;
+    /* text-shadow: 0 0 2px hsl(0, 100%, 100%); */
+    padding-left: 96px;
+    margin-top: -8rem;
+}
+
+.title
+{
+   /* text-transform: uppercase; */
+  background-image: linear-gradient(
+    -225deg,
+    #ffffff 0%,
+    #c7c7c7 50%,
+    white 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  /* display: inline-block; */
+      /* font-size: 190px; */
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.title img {
+    height: 96px;
+    width: 96px;
+    margin-top: -76px;
+    margin-right: -76px;
+}
+
+/* Environmental Impact Slider Section  */
+
+
+.envi-impact-slider-section {
+    background: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.788)), url(./images/esg-seamless.jpg);
+    background-blend-mode: overlay;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 92px 0 0px 0;
+}
+
+.envi-impact-slider-section-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 64px;
+}
+
+.envi-impact-slider-section-head h2 {
+    display: flex;
+    gap: 8px;
+    font-size: 36px;
+    color: darkgreen;
+    width: 700px;
+}
+
+button.download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: darkgreen;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button.download-button:hover {
+    transform: scale(1.125);
+}
+
+.envi-impact-slider-section-two {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    align-self: flex-start;
+    padding: 32px 64px;
+}
+
+.envi-impact-slider-section-two > p {
+    line-height: 28px;
+    font-size: 18px;
+    align-self: flex-start;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    list-style-type: none;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.envi-slider {
+    margin: 64px 0;
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 520px;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 0% 100%,
+        transparent
+    )
+}
+
+.envi-slider .envi-list {
+    display: flex;
+    width: 100%;
+    /* min-width: calc(var(--envi-width) * var(--envi-quantity)); */
+    min-width: 125%;
+    position: relative;
+}
+
+.envi-slider .envi-list .envi-item {
+    padding: 8px 0;
+    width: var(--envi-width);
+    height: var(--envi-height);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 35s linear infinite;
+    animation-delay: calc((35s / var(--envi-quantity)) * (var(--envi-position) - 1) - 25s)!important;
+    transition: filter 0.5s;
+}
+
+.envi-slider .envi-list .envi-item img {
+    width: 100%;
+}
+
+@keyframes autoRun{
+    from{
+        left:100%;
+    } to {
+        left: calc(var(--envi-width) * -1)
+    }
+}
+
+.envi-slider:hover .envi-item {
+    animation-play-state: paused!important;
+    filter: grayscale(0);
+}
+
+.envi-slider .envi-item:hover {
+    filter: grayscale(0);
+}
+
+.envi-slider[reverse="true"] .envi-item{
+    animation: reversePlay 10s linear infinite;
+}
+
+@keyframes reversePlay{
+    from{
+        left: calc(var(--envi-width) * -1);
+    } to {
+        left: 100%;
+    }
+}
+
+
+/* Environmental Impact  */
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+#icon4 {
+    width: 128px;
+    height: 128px;
+}
+/* section {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+} */
+
+.jv-center {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+    scroll-snap-align: center;
+}
+
+.jv-content {
+    width: 100vh;
+    height: 100vw;
+    position: relative;
+    transform-origin: left top;
+    transform: rotateZ(-90deg) translateX(-100%);
+    overflow: auto;
+    gap: 24px;
+}
+
+.jv-nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* mix-blend-mode: difference; */
+    z-index: 3;
+}
+
+.jv-logo {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(0, -50%) rotate(90deg);
+}
+
+.jv-title {
+    font-size: 48px;
+    margin: 0 20px;
+    z-index: 3;
+    font-weight: 600;
+}
+
+.jv-page {
+    z-index: 2;
+    width: 100vh;
+    height: 33.3333vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    /* background: white;
+    color: black; */
+}
+
+/* .jv-page:nth-child(even) {
+    background: black;
+    color: white;
+} */
+
+.jv-page-content {
+    transform: rotate(90deg);
+}
+
+.jv-content::-webkit-scrollbar {
+    display: none;
+}
+
+/* Envi Impact Cards  */
+
+.envi-impact-card {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.295);
+    border-radius: 8px;
+    /* box-shadow: 2px 0px 10px rgba(128, 128, 128, 0.322); */
+}
+
+.envi-impact-card-front, .envi-impact-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    backface-visibility: hidden;
+}
+
+.envi-impact-card-front h3{
+    /* align-self: flex-start; */
+    font-size: 24px;
+    padding: 0 32px;
+    text-align: center;
+    margin-top: 00px;
+    /* color: black; */
+}
+
+.envi-impact-card-front {
+    display: flex;
+    /* padding: 16px; */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    color: white;
+    transform: rotate(0deg);
+}
+
+.envi-impact-card-front img {
+    /* width: 100%; */
+    /* height: 100%; */
+    /* object-fit: cover; */
+    border-radius: 8px;
+}
+
+.envi-impact-card-back {
+    /* background-color: #000; */
+    /* color: white; */
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    /* color: white; */
+    padding: 32px;
+    transform: rotateY(180deg);
+}
+
+.envi-impact-card-back div {
+    display: flex;
+    gap: 8px;
+}
+
+#icon {
+    height: 24px;
+    width: 24px;
+}
+
+.envi-impact-card-back div p {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+.envi-impact-card1:hover {
+    transform: rotateY(180deg);
+    transition: all 0.01s ease;
+}
+.envi-impact-card2:hover {
+    transform: rotateY(180deg);
+    transition: all 0.01s ease;
+}
+.envi-impact-card3:hover {
+    transform: rotateY(180deg);
+    transition: all 0.01s ease;
+}
+.envi-impact-card4:hover {
+    transform: rotateY(180deg);
+    transition: all 0.01s ease;
+}
+.envi-impact-card5:hover {
+    transform: rotateY(180deg);
+    transition: all 0.01s ease;
+}
+.envi-impact-card6:hover {
+    transform: rotateY(180deg);
+    transition: all 0.01s ease;
+}
+
+.envi-impact-card1 > .envi-impact-card-front {
+    background-image:url(./images/clean\ water\ and\ sanitation.jpg) ;
+    background-size: 100% 100%;
+}
+.envi-impact-card2 > .envi-impact-card-front {
+    background-image:url(./images/affordable\ and\ clean\ energy.jpg) ;
+    background-size: 100% 100%;
+}
+.envi-impact-card3 > .envi-impact-card-front {
+    background-image:url(./images/sustainable\ cities\ and\ communities.jpg) ;
+    background-size: 100% 100%;
+}
+.envi-impact-card4 > .envi-impact-card-front {
+    background-image:url(./images/climate\ action.jpg) ;
+    background-size: 100% 100%;
+}
+.envi-impact-card5 > .envi-impact-card-front {
+    background-image:url(./images/decent\ work\ and\ economic\ growth.jpg) ;
+    background-size: 100% 100%;
+}
+.envi-impact-card6 > .envi-impact-card-front {
+    background-image:url(./images/responsible\ consumption\ and\ production.jpg) ;
+    background-size: 100% 100%;
+}
+
+/* Environment Impact Goals section  */
+
+.envi-goal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px;
+    gap: 48px;
+}
+
+.envi-goal-container h1 {
+    color: darkgreen;
+}
+
+.envi-goal-container-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.envi-goal-container-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+    /* background: hsla(120, 100%, 50%, 0.4); */
+    background-color: white;
+    padding: 32px;
+    border-radius: 8px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.137);
+}
+
+.envi-goal-container-card img {
+    border-bottom: 5px solid darkgreen;
+}
+
+/* .envi-goal-container-card:hover {
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.295);
+    background: hsla(120, 100%, 20%, 1);
+    border-color: darkgreen;
+    color: white;
+} */
+
+.envi-goal-container-card p {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+/* Border-animation */
+
+/* Footer  */
+
+footer {
+    background: black;
+}
+
+.footer-container {
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 48px;
+    padding: 48px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 40%;
+    align-items: flex-start;
+}
+
+.footer-left .logo {
+    height: 48px;
+    width: auto;
+}
+
+.footer-right {
+    display: flex;
+    gap: 64px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    /* padding: 16px; */
+}
+
+.footer-links > a {
+    color: gray;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-links > a:hover {
+    color: white;
+    /* font-weight: 600; */
+    transform: scale(1.1);
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.social-icons > a {
+    padding: 0;
+}
+
+.social-icon {
+    height: 32px;
+    width: 32px;
+}

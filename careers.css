@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    /* text-decoration: underline; */
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-weight: 600;
+    line-height: 24px;
+}
+
+#icon2 {
+    height: 96px;
+    width: 96px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -1;
+    border-bottom: 5px solid darkgreen;
+}
+
+/* Animated Navbar & Header on Scroll  */
+
+:root {
+    --clr-neutral-500: white;
+    --clr-neutral-400: gray;
+    --clr-neutral-300: black;
+}
+
+
+.header-one {
+    --__animationStartsAfter: 110vh;
+    --__animationDistance: 120vh;
+    /* --__surfaceColorStart: hsla(0, 12%, 5%, 0.952); */
+    /* --__surfaceColorStart: rgb(0, 0, 0); */
+    --__surfaceColorStart: hsla(0, 0%, 0%, 1);
+    --__surfaceColorEnd: hsla(0, 0%, 100%, 0.747);
+    --__textColorStart: white;
+    --__textColorEnd: black;
+
+    --__logoAfterAnimation: none;
+
+    padding: 16px 48px;
+    margin-inline: auto;
+    margin-block: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: var(--__headerWidth, auto);
+
+    /* border-radius: 100vw; */
+    
+    color: var(--__textColorStart);
+    backdrop-filter: blur(1rem);
+    /* background-color: var(--clr-neutral-300); */
+    background-color: var(--__surfaceColorStart);
+
+    position: sticky;
+    z-index: 1000;
+    top: -5rem;
+    animation: stickyNav linear forwards;
+
+    @supports (animation-timeline: view()) {
+        backdrop-filter: blur(1rem);
+
+        animation-timeline: view();
+        animation-range-start: var(--__animationStartsAfter);
+        animation-range-end: var(--__animationDistance);
+    }
+
+    .gpsr-logo {
+        display: var(--__logoDisplay, block);
+        height: 48px;
+        width: auto;
+    }
+
+    .nav-one-links {
+        display: flex;
+        align-items: center;
+        /* gap: 16px; */
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+
+/* .nav-one-item:nth-child(6) {
+    background: white;
+    padding: 8px 32px;
+    color: darkgreen;
+} */
+
+.nav-one-item > .nav-one-item-anchor {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+    
+}
+
+.nav-one-item {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0 24px;
+    text-align: left;
+}
+
+.nav-one-item:hover {
+    cursor: pointer;
+    font-weight: 800;
+    text-underline-offset: 0.171;
+    transform: scale(1.2);
+}
+
+
+
+@keyframes stickyNav {
+    0%, 100% {
+        --__headerWidth: fit-content;
+        --__logoDisplay: none;
+    }
+
+    100% {
+        top: 1rem;
+        color: var(--__textColorEnd);
+        /* background-color: var(--clr-neutral-500); */
+        background-color: var(--__surfaceColorEnd);
+        box-shadow:0 0 0.75rem hsl(0 0% 0% / 0.3);
+        border-radius: 10px;
+    }
+}
+
+/* Career Hero Section  */
+
+.career-hero-section p {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.career-hero-section {
+    background: url(./images/career-hero-img.jpg);
+    background-color: black;
+    object-fit: cover;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    color: white;
+    padding: 48px;
+}
+
+.career-hero-section h2 {
+    text-shadow: 1px 1px 20px black;
+}
+
+.career-hero-section p {
+    text-shadow: 1px 1px 10px black;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.career-hero-section button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: white;
+    border: none;
+    color: darkgreen;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 600;
+}
+
+.career-hero-section button:hover {
+    transform: scale(1.125);
+    background: darkgreen;
+    color: white;
+}
+
+/* Why GPS Section  */
+
+.career-why-gpsr-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+    text-align: center;
+    gap: 64px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.career-why-gpsr-section-head {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 900px;
+}
+
+.career-why-gpsr-section-head > h2 {
+    color: darkgreen;
+}
+
+.career-why-gpsr-section-head > p {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.why-gpsr-section-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.why-gpsr-section-cards h3 {
+    color: darkgreen;
+    font-size: 22px;
+}
+
+.why-gpsr-section-cards .card {
+    padding: 24px;
+    box-shadow: 2px 0px 10px rgba(128, 128, 128, 0.322);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    border: 2px solid white;
+    /* transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.why-gpsr-section-cards .card div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Slider  */
+
+.career-job-openings {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+.career-job-openings h2 {
+    color: darkgreen;
+}
+
+.career-job-openings p {
+    font-size: 24px;
+}
+
+.center {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 100%;
+    height: fit-content;
+    padding: 48px 0;
+    overflow: auto;
+}
+
+.slider::-webkit-scrollbar {
+    width: 80px;
+    height: 5px;
+}
+
+.slider::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 8px;
+}
+
+.slider::-webkit-scrollbar-track {
+    background: rgba(169, 169, 169, 0.514);
+    margin: 0 48px;
+}
+
+.card > a > img {
+    height: 400px;
+    width: 500px;
+    border-radius: 8px;
+}
+
+.job-cards {
+    width: fit-content;
+    display: flex;
+    /* gap: 32px; */
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
+.job-cards > .card {
+    width: 500px;
+    height: 400px;
+    background: gray;
+    box-shadow: 2px 0px 10px rgba(128, 128, 128, 0.322);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 16px;
+    align-items: flex-start;
+    border-radius: 8px;
+}
+
+/* Life At GPSR */
+
+
+
+
+
+/* Work Life Balance */
+.career-work-life-balance {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 64px 0;
+}
+
+.career-work-life-balance .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.career-work-life-balance h2 {
+    color: darkgreen;
+}
+
+.career-work-life-balance p {
+    font-size: 24px;
+    max-width: 900px;
+    text-align: center;
+    line-height: 32px;
+    /* font-weight: 500; */
+}
+
+.career-work-life-balance-slider {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.career-work-life-balance-slider .images {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slide 30s linear infinite;
+}
+
+.career-work-life-balance-slider .images2 {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: reverse-slide 30s linear infinite;
+}
+
+.career-work-life-balance-slider .images img,
+.career-work-life-balance-slider .images2 img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 8px;
+    border-radius: 8px;
+}
+
+@keyframes slide{
+    from {
+        transform: translateX(0)
+    } to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes reverse-slide{
+    from {
+        transform: translateX(-50%)
+    } to {
+        transform: translateX(0%);
+    }
+}
+
+.grid1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 300px;
+}
+
+.grid1 img {
+    height: 100%;
+}
+
+/* Projects based on Waste - Section  */
+
+.employee-benefits-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 96px 0;
+}
+
+.employee-benefits-container h2 {
+    color: darkgreen;
+    margin-bottom: 64px;
+}
+
+/* .employee-benefits-container p {
+    font-size: 24px;
+    max-width: 800px;
+    text-align: center;
+    font-weight: 600;
+    margin: 8px 0 64px 0;
+    line-height: 32px;
+} */
+
+.employee-benefits-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 32px; */
+    margin: 0 auto;
+    /* padding: 32px; */
+    margin-bottom: -16px;
+}
+
+.employee-benefits-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    filter: grayscale(100%);
+    cursor: pointer;
+    padding: 32px;
+    width: calc((1200px)/4);
+    text-align: center;
+    /* background: white;
+    border-radius: 8px; */
+}
+
+.employee-benefits-button:hover {
+    filter: grayscale(0)
+}
+
+.active-employee-benefits-button {
+    filter: grayscale(0);
+    background: rgb(238, 238, 238);
+    border-radius: 8px 8px 0 0;
+    transition: 0.3s ease;
+}
+
+.active-employee-benefits-button p {
+    font-weight: 700;
+}
+
+.employee-benefits-button-icon {
+    width: 80px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 8px;
+}
+
+.employee-benefits-button:hover .employee-benefits-button-icon {
+    transform: scale(1.25);
+}
+
+.employee-benefits-info-container {
+    /* background: hsla(120, 100%, 20%, 0.1); */
+    border-radius: 0 0 8px 8px;
+}
+
+.employee-benefits-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    width: 1200px;
+    padding: 64px;
+    margin: 0 auto;
+    transition: 0.3s;
+    line-height: 24px;
+    background: rgb(238, 238, 238);
+    border-radius: 8px;
+}
+
+/* #msw-waste-button, #pre-waste-button {
+    filter: grayscale(100%);
+} */
+
+#accomodation-info, #loan-info, #meal-info {
+    display: none;
+}
+
+.employee-benefits-info img {
+    width: 400px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.employee-benefits-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.employee-benefits-info div p{
+    font-size: 16px;
+}
+
+p span {
+    font-weight: 700;
+}
+
+/* Last Call to Action section*/
+
+.career-last-cta-section {
+    background: black;
+    margin: 0 auto;
+    padding: 64px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+}
+
+.career-last-cta-section > p {
+    font-size: 24px;
+}
+
+.career-last-cta-section button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: darkgreen;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 600;
+    margin: 16px auto;
+}
+
+.career-last-cta-section button:hover {
+    transform: scale(1.125);
+    background: white;
+    color: darkgreen;
+}
+
+/* Footer  */
+
+footer {
+    background: black;
+}
+
+.footer-container {
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 48px;
+    padding: 48px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 40%;
+    align-items: flex-start;
+}
+
+.footer-left .logo {
+    height: 48px;
+    width: auto;
+}
+
+.footer-right {
+    display: flex;
+    gap: 64px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    /* padding: 16px; */
+}
+
+.footer-links > a {
+    color: gray;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-links > a:hover {
+    color: white;
+    /* font-weight: 600; */
+    transform: scale(1.1);
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.social-icons > a {
+    padding: 0;
+}
+
+.social-icon {
+    height: 32px;
+    width: 32px;
+}
