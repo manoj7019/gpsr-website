@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
-    const loader = document.getElementById('loader');
-    loader.style.display = 'none'; // Hide the loader
-});
+// window.addEventListener('load', () => {
+//     const loader = document.getElementById('loader');
+//     loader.style.display = 'none'; // Hide the loader
+// });
