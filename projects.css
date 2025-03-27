@@ -863,7 +863,7 @@ p span {
 /* Footer section  */
 
 footer {
-    width: 100vw;
+    width: 100%;
     background: black;
 }
 
@@ -871,7 +871,7 @@ footer {
     background-color: black;
     color: white;
     display: flex;
-    width: 1366px;
+    width: 1300px;
     justify-content: space-between;
     /* align-items: center; */
     gap: 48px;

@@ -227,6 +227,14 @@ a {
     display: none;
 }
 
+#accordion li label #icon {
+    transition: transform 0.3s ease; /* Smooth rotation */
+}
+
+#accordion label + input[type="radio"]:checked + .address + label #icon {
+    transform: rotate(180deg); /* Rotate the arrow */
+}
+
 .contact-us-form {
     display: flex;
     flex-direction: column;
@@ -278,7 +286,7 @@ a {
 
 /* Footer */
 footer {
-    width: 100vw;
+    width: 100%;
     background: black;
 }
 
@@ -286,7 +294,7 @@ footer {
     background-color: black;
     color: white;
     display: flex;
-    width: 1366px;
+    width: 1300px;
     justify-content: space-between;
     /* align-items: center; */
     gap: 48px;
