@@ -729,6 +729,37 @@ h2 {
     width: 66.66666%;
 }
 
+.joint-venture-anchor {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color:darkgreen;
+    color: white;
+    cursor: pointer;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 0px 10px rgba(128, 128, 128, 0.322);
+    border-radius: 8px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.joint-venture-anchor:hover {
+    transform: scale(1.125);
+}
+
+button.joint-venture-button {
+    background-color: darkgreen;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+
 /* Proweps Section */
 
 .main-grid {

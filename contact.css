@@ -167,13 +167,13 @@ a {
     width: fit-content;
     padding: 16px;
     border-radius: 8px;
-    margin-top: -100px;
+    margin-top: -164px;
 }
 
 #accordion {
     /* margin: 100px auto; */
     width: 600px;
-    background: darkgreen;
+    background-color: rgb(0, 32, 0);
     padding: 32px;
     border-radius: 8px;
 }
