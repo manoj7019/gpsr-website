@@ -252,6 +252,7 @@ button.slide-nav-button:hover {
 #icon {
     width: 24px;
     height: 24px;
+    margin-top: 8px;
 }
 
 #promoters {
