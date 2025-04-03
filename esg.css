@@ -240,13 +240,14 @@ section {
 
 
 .envi-impact-slider-section {
-    background: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.788)), url(./images/esg-seamless.jpg);
+    /* background: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.788)), url(./images/esg-seamless.jpg); */
     background-blend-mode: overlay;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 92px 0 0px 0;
+    padding: 64px 0;
+    max-width: 1300px;
 }
 
 .envi-impact-slider-section-head {
@@ -263,6 +264,20 @@ section {
     font-size: 36px;
     color: darkgreen;
     width: 700px;
+}
+
+.esg-reports-download {
+    position: absolute;
+    background: rgba(128, 128, 128, 0.103);
+    display: flex;
+    right: 0;
+    top: 150vh;
+    padding: 64px;
+    margin: 64px;
+    /* background-color: #000; */
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 8px;
 }
 
 button.download-button {
@@ -396,7 +411,7 @@ html {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    
+    background: rgba(128, 128, 128, 0.103);
     scroll-snap-align: center;
 }
 
@@ -412,11 +427,12 @@ html {
 
 .jv-nav {
     width: 100%;
-    height: 80px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: white;
+    background: rgb(241, 241, 241);
+    /* background: white; */
     position: sticky;
     top: 0;
     left: 0;
@@ -441,7 +457,7 @@ html {
 .jv-page {
     z-index: 2;
     width: 100vh;
-    height: 33.3333vw;
+    height: 24vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -467,8 +483,8 @@ html {
 
 .envi-impact-card {
     position: relative;
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 400px;
     transform-style: preserve-3d;
     transition: transform 0.5s;
     cursor: pointer;
@@ -515,6 +531,7 @@ html {
 .envi-impact-card-back {
     /* background-color: #000; */
     /* color: white; */
+    background: white;
     padding: 16px;
     display: flex;
     flex-direction: column;

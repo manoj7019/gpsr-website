@@ -635,6 +635,7 @@ h2 {
     border-radius: 8px;
     padding-inline:16px;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
 }
 
 .know-more-button:hover {
@@ -740,8 +741,9 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    background: black;
-    color: white;
+    /* background: black; */
+    background: rgba(128, 128, 128, 0.103);
+    /* color: white; */
     align-items: center;
     padding: 64px 0;
 }
@@ -757,7 +759,7 @@ h2 {
 .proweps-head h1 {
     /* color: rgb(6, 226, 6); */
     /* color: rgb(0,255,0); */
-    color: #6aac00;
+    color: darkgreen;
 }
 
 .proweps-head > p {
@@ -768,14 +770,14 @@ h2 {
 
 .main-grid {
     display: grid;
-    gap: 24px;
+    gap: 48px;
     max-width: 1366px;
     /* grid-template-columns: 100px 100px 100px; */
     /* grid-template-columns: 25% 25% 25%; */
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
     grid-template-columns: repeat(4, 1fr);
     padding: 32px 0;
-    background: black;
+    /* background: black; */
 }
 
 .proweps-image {
@@ -817,8 +819,13 @@ h2 {
     flex-direction: column;
     gap: 32px;
     padding: 16px;
-    background: black;
-    color: white;
+    /* background: black; */
+    /* color: white; */
+}
+
+.grid-3 h3, .grid-4 h3 {
+    text-align: center;
+    color: darkgreen;
 }
 
 .grid-3 > ul {
@@ -869,11 +876,12 @@ h2 {
 .gpsr-at-a-glance {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 48px;
     align-items: center;
-    background: rgba(211, 211, 211, 0.24);
+    /* background: rgba(211, 211, 211, 0.24); */
     padding: 96px 0;
     z-index: 1000;
+    margin-bottom: 32px;
 }
 
 .gpsr-at-a-glance-head {
@@ -882,7 +890,8 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 16px;
+    gap: 8px;
+    width: 960px;
 }
 
 .gpsr-at-a-glance-head > h2 {
@@ -892,6 +901,7 @@ h2 {
 
 .gpsr-at-a-glance-head > p {
     font-size: 24px;
+    line-height: 32px;
 }
 
 
@@ -943,8 +953,13 @@ h2 {
     transform: rotate(0deg);
 }
 
+.gpsr-at-a-glance-front h3 {
+    font-size: 28px;
+}
+
 .gpsr-at-a-glance-back {
-    background-color: #000000;
+    /* background-color: #000000; */
+    background-color: rgb(0, 32, 0);
     /* padding: 16px; */
     display: flex;
     flex-direction: column;
@@ -1006,6 +1021,37 @@ h2 {
 .gpsr-at-a-glance-card4 > .gpsr-at-a-glance-front {
     background-image:url(./images/04.png) ;
     background-size: 100% 120%;
+}
+
+.gpsr-at-glance-anchor {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color:darkgreen;
+    color: white;
+    cursor: pointer;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 0px 10px rgba(128, 128, 128, 0.322);
+    border-radius: 8px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.gpsr-at-glance-anchor:hover {
+    transform: scale(1.125);
+}
+
+button.gpsr-at-glance-button {
+    background-color: darkgreen;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
 }
 
 /* JV and Partnerships  */
@@ -1083,8 +1129,10 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 48px 0;
-    background-color: black;
+    padding: 64px 0;
+    gap: 32px;
+    /* background-color: black; */
+    background-color: rgb(0, 32, 0);
     color: white;
 }
 
@@ -1123,7 +1171,7 @@ h3 {
     text-align: center;
     /* border-bottom: 8px solid #45085a; */
     border-radius: 12px;
-    background-color: black;
+    /* background-color: black; */
     padding: 24px;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1156,12 +1204,43 @@ h3 {
 }
 
 .counter-icon {
-    width: 6rem;
-    height: 6rem;
+    width: 8rem;
+    height: 8rem;
     margin-bottom: 32px;
-    background: rgb(49, 49, 49);
+    background: rgb(0, 51, 30);
     padding: 16px;
     border-radius: 8px;
+}
+
+.climate-impact-button-anchor {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color:white;
+    color: darkgreen;
+    cursor: pointer;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 0px 10px rgba(128, 128, 128, 0.322);
+    border-radius: 8px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.climate-impact-button-anchor:hover {
+    transform: scale(1.125);
+}
+
+button.climate-impact-button {
+    background-color: white;
+    color: darkgreen;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
 }
 
 /* Our Business  */

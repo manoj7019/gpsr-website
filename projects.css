@@ -129,6 +129,24 @@ body {
 }
 
 /* Our Projects  */
+.our-projects-head {
+    margin: 48px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    gap: 8px;
+}
+
+.our-projects-head h1 {
+    color: darkgreen;
+    font-size: 48px;
+}
+
+.our-projects-head p {
+    font-size: 24px;
+
+}
 
 .map-our-projects {
     max-width: 1400px;
@@ -141,8 +159,8 @@ a {
 
 .map-hero-button-anchor {
     margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 16px 24px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
     display: flex;
@@ -153,7 +171,7 @@ a {
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.map-hero-button-anchor button {
+button .map-hero-button-anchor  {
     font-size: 24px;
     background-color: darkgreen;
     color: white;
@@ -192,9 +210,8 @@ a {
     justify-content: center;
     align-items: center;
     gap: 32px;
-    margin: 0 auto;
-
-    right: 256px;
+    margin: 196px auto;
+    right: 216px;
     top: 84px;
 }
 
@@ -444,8 +461,8 @@ h2 {
 #INUP2:hover,
 #INCT2:hover,  
 #INHR2:hover {
-    fill: #4dff56;
-    filter: drop-shadow(0 0 2px #4dff56) drop-shadow(0 0 2px #4dff56) drop-shadow(0 0 10px #4dff56);
+    fill: #6aac00;
+    filter: drop-shadow(0 0 2px #6aac00) drop-shadow(0 0 2px #6aac00) drop-shadow(0 0 10px #6aac00);
     /* cursor: url(./images/click\ \(1\).png), auto; */
     cursor:pointer;
 }
