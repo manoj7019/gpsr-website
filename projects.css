@@ -510,7 +510,7 @@ h2 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* background-color: hsl; */
+    background: hsl(0, 0%, 70%, 0.1);
     border-radius: 8px;
     gap: 16px;
     /* filter: drop-shadow(0 0 25px #4dff56); */
