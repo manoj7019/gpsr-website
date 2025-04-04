@@ -444,10 +444,9 @@ h2 {
 #INCT:hover, 
 #INGJ:hover, 
 #INHR:hover {
-    fill: #4dff56;
-    /* cursor: url(./images/click\ \(1\).png), auto; */
+    fill: rgb(0, 60, 0);
     cursor:pointer;
-    filter: drop-shadow(0 0 2px #4dff56) drop-shadow(0 0 2px #4dff56) drop-shadow(0 0 10px #4dff56);
+    filter: drop-shadow(0 0 2px rgb(0, 60, 0)) drop-shadow(0 0 2px rgb(0, 60, 0)) drop-shadow(0 0 10px rgb(0, 60, 0));
 }
 
 #INAP2,
@@ -461,10 +460,9 @@ h2 {
 #INUP2:hover,
 #INCT2:hover,  
 #INHR2:hover {
-    fill: #6aac00;
-    filter: drop-shadow(0 0 2px #6aac00) drop-shadow(0 0 2px #6aac00) drop-shadow(0 0 10px #6aac00);
-    /* cursor: url(./images/click\ \(1\).png), auto; */
+    fill: rgb(0, 60, 0);
     cursor:pointer;
+    filter: drop-shadow(0 0 2px rgb(0, 60, 0)) drop-shadow(0 0 2px rgb(0, 60, 0)) drop-shadow(0 0 10px rgb(0, 60, 0));
 }
 
 .map-project-card-container {
@@ -657,6 +655,48 @@ h5 {
 p span {
     font-weight: 700;
 }
+
+.map-pin-vijaywada {
+    margin-top: -210px;
+    margin-left: 260px;
+}
+
+.map-pin-jaunpur {
+    margin-top: -370px;
+    margin-left: 290px;
+}
+.map-pin-sitapur {
+    margin-top: -410px;
+    margin-left: 260px;
+}
+.map-pin-lakhimpur {
+    margin-top: -420px;
+    margin-left: 250px;
+}
+
+.map-pin-jind00 {
+    margin-top: -420px;
+    margin-left: 190px;
+}
+.map-pin-karnal {
+    margin-top: -430px;
+    margin-left: 185px;
+}
+.map-pin-kaithal {
+    margin-top: -440px;
+    margin-left: 190px;
+}
+.map-pin-sirsa {
+    margin-top: -423px;
+    margin-left: 180px;
+}
+
+.map-pin-bemetra {
+    margin-top: -310px;
+    margin-left: 270px;
+}
+
+
 
 /* Landmark-projects */
 

@@ -35,7 +35,7 @@ document.getElementById('INMP').addEventListener('click', function() {
     // mapClick.play();
 })
 document.getElementById('INMP').addEventListener('click', function() {
-    document.getElementById('INMP').style.fill = '#4dff56';
+    document.getElementById('INMP').style.fill = 'rgb(0, 60, 0)';
     // document.getElementById('INMP').style.filter = 'drop-shadow(0 0 5px #4dff56) drop-shadow(0 0 5px #4dff56) drop-shadow(0 0 20px #4dff56)';
     document.getElementById('INUP').style.fill = ' var(--stateColor)';
     document.getElementById('INHR').style.fill = ' var(--stateColor)';
@@ -57,7 +57,7 @@ document.getElementById('INUP').addEventListener('click', function() {
     // mapClick.play();
 })
 document.getElementById('INUP').addEventListener('click', function() {
-    document.getElementById('INUP').style.fill = '#4dff56';
+    document.getElementById('INUP').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INMP').style.fill = 'var(--stateColor)';
     document.getElementById('INHR').style.fill = 'var(--stateColor)';
     document.getElementById('INAP').style.fill = 'var(--stateColor)';
@@ -78,7 +78,7 @@ document.getElementById('INHR').addEventListener('click', function() {
     // mapClick.play();
 })
 document.getElementById('INHR').addEventListener('click', function() {
-    document.getElementById('INHR').style.fill = '#4dff56';
+    document.getElementById('INHR').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INMP').style.fill = 'var(--stateColor)';
     document.getElementById('INUP').style.fill = 'var(--stateColor)';
     document.getElementById('INAP').style.fill = 'var(--stateColor)';
@@ -99,7 +99,7 @@ document.getElementById('INAP').addEventListener('click', function() {
     // mapClick.play();
 })
 document.getElementById('INAP').addEventListener('click', function() {
-    document.getElementById('INAP').style.fill = '#4dff56';
+    document.getElementById('INAP').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INMP').style.fill = 'var(--stateColor)';
     document.getElementById('INUP').style.fill = 'var(--stateColor)';
     document.getElementById('INHR').style.fill = 'var(--stateColor)';
@@ -120,7 +120,7 @@ document.getElementById('INCT').addEventListener('click', function() {
     // mapClick.play();
 })
 document.getElementById('INCT').addEventListener('click', function() {
-    document.getElementById('INCT').style.fill = '#4dff56';
+    document.getElementById('INCT').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INMP').style.fill = 'var(--stateColor)';
     document.getElementById('INUP').style.fill = 'var(--stateColor)';
     document.getElementById('INAP').style.fill = 'var(--stateColor)';
@@ -141,7 +141,7 @@ document.getElementById('INRJ').addEventListener('click', function() {
     // mapClick.play();
 })
 document.getElementById('INRJ').addEventListener('click', function() {
-    document.getElementById('INRJ').style.fill = '#4dff56';
+    document.getElementById('INRJ').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INMP').style.fill = 'var(--stateColor)';
     document.getElementById('INUP').style.fill = 'var(--stateColor)';
     document.getElementById('INAP').style.fill = 'var(--stateColor)';
@@ -162,7 +162,7 @@ document.getElementById('INGJ').addEventListener('click', function() {
     // mapClick.play();
 })
 document.getElementById('INGJ').addEventListener('click', function() {
-    document.getElementById('INGJ').style.fill = '#4dff56';
+    document.getElementById('INGJ').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INMP').style.fill = 'var(--stateColor)';
     document.getElementById('INUP').style.fill = 'var(--stateColor)';
     document.getElementById('INAP').style.fill = 'var(--stateColor)';
@@ -186,7 +186,7 @@ document.getElementById('INUP2').addEventListener('click', function() {
     // mapClick.play();
 })
 document.getElementById('INUP2').addEventListener('click', function() {
-    document.getElementById('INUP2').style.fill = '#4dff56';
+    document.getElementById('INUP2').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INHR2').style.fill = 'var(--stateColor)';
     document.getElementById('INAP2').style.fill = 'var(--stateColor)';
     document.getElementById('INCT2').style.fill = 'var(--stateColor)';
@@ -201,7 +201,7 @@ document.getElementById('INHR2').addEventListener('click', function() {
     // mapClick.play();
 })
 document.getElementById('INHR2').addEventListener('click', function() {
-    document.getElementById('INHR2').style.fill = '#4dff56';
+    document.getElementById('INHR2').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INUP2').style.fill = 'var(--stateColor)';
     document.getElementById('INAP2').style.fill = 'var(--stateColor)';
     document.getElementById('INCT2').style.fill = 'var(--stateColor)';
@@ -216,7 +216,7 @@ document.getElementById('INAP2').addEventListener('click', function() {
     // mapClick.play();
 })
 document.getElementById('INAP2').addEventListener('click', function() {
-    document.getElementById('INAP2').style.fill = '#4dff56';
+    document.getElementById('INAP2').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INUP2').style.fill = 'var(--stateColor)';
     document.getElementById('INHR2').style.fill = 'var(--stateColor)';
     document.getElementById('INCT2').style.fill = 'var(--stateColor)';
@@ -231,7 +231,7 @@ document.getElementById('INCT2').addEventListener('click', function() {
     // mapClick.play();
 })
 document.getElementById('INCT2').addEventListener('click', function() {
-    document.getElementById('INCT2').style.fill = '#4dff56';
+    document.getElementById('INCT2').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INUP2').style.fill = 'var(--stateColor)';
     document.getElementById('INHR2').style.fill = 'var(--stateColor)';
     document.getElementById('INAP2').style.fill = 'var(--stateColor)';
