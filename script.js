@@ -30,3 +30,7 @@ function preloadPages() {
 
 // Call the preload function when the home page loads
 window.addEventListener('load', preloadPages);
+
+let Year = new Date().getFullYear();
+let thisYear = document.getElementById('thisYear')
+thisYear.textContent = Year;
