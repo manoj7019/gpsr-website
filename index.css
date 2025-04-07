@@ -734,7 +734,8 @@ h2 {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
-    background-color:darkgreen;
+    /* background-color:rgb(0, 32, 0); */
+    background: darkgreen;
     color: white;
     cursor: pointer;
     width: 25%;
@@ -753,6 +754,7 @@ h2 {
 
 button.joint-venture-button {
     background-color: darkgreen;
+    /* background: rgb(0, 32, 0); */
     color: white;
     display: flex;
     justify-content: space-between;
