@@ -23,7 +23,7 @@ document.getElementById('map-bio-epc-button').addEventListener('click', () => {
     // mapClick.play();
 })
 
-document.getElementById('INMP').addEventListener('click', function() {
+document.getElementById('INMP').addEventListener('mousemove', function() {
     document.getElementById('map-default-projects-info-right').style.display = 'none';
     document.getElementById('map-project-card-container-mp').classList.add('map-project-card-containers');
     document.getElementById('map-project-card-container-up').classList.remove('map-project-card-containers');
@@ -34,7 +34,7 @@ document.getElementById('INMP').addEventListener('click', function() {
     document.getElementById('map-project-card-container-gj').classList.remove('map-project-card-containers');
     // mapClick.play();
 })
-document.getElementById('INMP').addEventListener('click', function() {
+document.getElementById('INMP').addEventListener('mousemove', function() {
     document.getElementById('INMP').style.fill = 'rgb(0, 60, 0)';
     // document.getElementById('INMP').style.filter = 'drop-shadow(0 0 5px #4dff56) drop-shadow(0 0 5px #4dff56) drop-shadow(0 0 20px #4dff56)';
     document.getElementById('INUP').style.fill = ' var(--stateColor)';
@@ -45,7 +45,7 @@ document.getElementById('INMP').addEventListener('click', function() {
     document.getElementById('INGJ').style.fill = ' var(--stateColor)';
 })
 
-document.getElementById('INUP').addEventListener('click', function() {
+document.getElementById('INUP').addEventListener('mousemove', function() {
     document.getElementById('map-default-projects-info-right').style.display = 'none';
     document.getElementById('map-project-card-container-up').classList.add('map-project-card-containers');
     document.getElementById('map-project-card-container-mp').classList.remove('map-project-card-containers');
@@ -56,7 +56,7 @@ document.getElementById('INUP').addEventListener('click', function() {
     document.getElementById('map-project-card-container-gj').classList.remove('map-project-card-containers');
     // mapClick.play();
 })
-document.getElementById('INUP').addEventListener('click', function() {
+document.getElementById('INUP').addEventListener('mousemove', function() {
     document.getElementById('INUP').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INMP').style.fill = 'var(--stateColor)';
     document.getElementById('INHR').style.fill = 'var(--stateColor)';
@@ -66,7 +66,7 @@ document.getElementById('INUP').addEventListener('click', function() {
     document.getElementById('INGJ').style.fill = 'var(--stateColor)';
 })
 
-document.getElementById('INHR').addEventListener('click', function() {
+document.getElementById('INHR').addEventListener('mousemove', function() {
     document.getElementById('map-default-projects-info-right').style.display = 'none';
     document.getElementById('map-project-card-container-hr').classList.add('map-project-card-containers');
     document.getElementById('map-project-card-container-mp').classList.remove('map-project-card-containers');
@@ -77,7 +77,7 @@ document.getElementById('INHR').addEventListener('click', function() {
     document.getElementById('map-project-card-container-gj').classList.remove('map-project-card-containers');
     // mapClick.play();
 })
-document.getElementById('INHR').addEventListener('click', function() {
+document.getElementById('INHR').addEventListener('mousemove', function() {
     document.getElementById('INHR').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INMP').style.fill = 'var(--stateColor)';
     document.getElementById('INUP').style.fill = 'var(--stateColor)';
@@ -87,7 +87,7 @@ document.getElementById('INHR').addEventListener('click', function() {
     document.getElementById('INGJ').style.fill = 'var(--stateColor)';
 })
 
-document.getElementById('INAP').addEventListener('click', function() {
+document.getElementById('INAP').addEventListener('mousemove', function() {
     document.getElementById('map-default-projects-info-right').style.display = 'none';
     document.getElementById('map-project-card-container-ap').classList.add('map-project-card-containers');
     document.getElementById('map-project-card-container-mp').classList.remove('map-project-card-containers');
@@ -98,7 +98,7 @@ document.getElementById('INAP').addEventListener('click', function() {
     document.getElementById('map-project-card-container-gj').classList.remove('map-project-card-containers');
     // mapClick.play();
 })
-document.getElementById('INAP').addEventListener('click', function() {
+document.getElementById('INAP').addEventListener('mousemove', function() {
     document.getElementById('INAP').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INMP').style.fill = 'var(--stateColor)';
     document.getElementById('INUP').style.fill = 'var(--stateColor)';
@@ -108,7 +108,7 @@ document.getElementById('INAP').addEventListener('click', function() {
     document.getElementById('INGJ').style.fill = 'var(--stateColor)';
 })
 
-document.getElementById('INCT').addEventListener('click', function() {
+document.getElementById('INCT').addEventListener('mousemove', function() {
     document.getElementById('map-default-projects-info-right').style.display = 'none';
     document.getElementById('map-project-card-container-ct').classList.add('map-project-card-containers');
     document.getElementById('map-project-card-container-mp').classList.remove('map-project-card-containers');
@@ -119,7 +119,7 @@ document.getElementById('INCT').addEventListener('click', function() {
     document.getElementById('map-project-card-container-gj').classList.remove('map-project-card-containers');
     // mapClick.play();
 })
-document.getElementById('INCT').addEventListener('click', function() {
+document.getElementById('INCT').addEventListener('mousemove', function() {
     document.getElementById('INCT').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INMP').style.fill = 'var(--stateColor)';
     document.getElementById('INUP').style.fill = 'var(--stateColor)';
@@ -129,7 +129,7 @@ document.getElementById('INCT').addEventListener('click', function() {
     document.getElementById('INGJ').style.fill = 'var(--stateColor)';
 })
 
-document.getElementById('INRJ').addEventListener('click', function() {
+document.getElementById('INRJ').addEventListener('mousemove', function() {
     document.getElementById('map-default-projects-info-right').style.display = 'none';
     document.getElementById('map-project-card-container-rj').classList.add('map-project-card-containers');
     document.getElementById('map-project-card-container-mp').classList.remove('map-project-card-containers');
@@ -140,7 +140,7 @@ document.getElementById('INRJ').addEventListener('click', function() {
     document.getElementById('map-project-card-container-gj').classList.remove('map-project-card-containers');
     // mapClick.play();
 })
-document.getElementById('INRJ').addEventListener('click', function() {
+document.getElementById('INRJ').addEventListener('mousemove', function() {
     document.getElementById('INRJ').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INMP').style.fill = 'var(--stateColor)';
     document.getElementById('INUP').style.fill = 'var(--stateColor)';
@@ -150,7 +150,7 @@ document.getElementById('INRJ').addEventListener('click', function() {
     document.getElementById('INGJ').style.fill = 'var(--stateColor)';
 })
 
-document.getElementById('INGJ').addEventListener('click', function() {
+document.getElementById('INGJ').addEventListener('mousemove', function() {
     document.getElementById('map-default-projects-info-right').style.display = 'none';
     document.getElementById('map-project-card-container-gj').classList.add('map-project-card-containers');
     document.getElementById('map-project-card-container-mp').classList.remove('map-project-card-containers');
@@ -161,7 +161,7 @@ document.getElementById('INGJ').addEventListener('click', function() {
     document.getElementById('map-project-card-container-rj').classList.remove('map-project-card-containers');
     // mapClick.play();
 })
-document.getElementById('INGJ').addEventListener('click', function() {
+document.getElementById('INGJ').addEventListener('mousemove', function() {
     document.getElementById('INGJ').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INMP').style.fill = 'var(--stateColor)';
     document.getElementById('INUP').style.fill = 'var(--stateColor)';
@@ -177,7 +177,7 @@ document.getElementById('INGJ').addEventListener('click', function() {
 //     document.getElementById('project-card-container').style.display = 'none';
 // })
 
-document.getElementById('INUP2').addEventListener('click', function() {
+document.getElementById('INUP2').addEventListener('mousemove', function() {
     document.getElementById('map-igrpl-projects-info-right').style.display = 'none';
     document.getElementById('map-project-card-container-up2').classList.add('map-project-card-containers');
     document.getElementById('map-project-card-container-hr2').classList.remove('map-project-card-containers');
@@ -185,14 +185,14 @@ document.getElementById('INUP2').addEventListener('click', function() {
     document.getElementById('map-project-card-container-ct2').classList.remove('map-project-card-containers');
     // mapClick.play();
 })
-document.getElementById('INUP2').addEventListener('click', function() {
+document.getElementById('INUP2').addEventListener('mousemove', function() {
     document.getElementById('INUP2').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INHR2').style.fill = 'var(--stateColor)';
     document.getElementById('INAP2').style.fill = 'var(--stateColor)';
     document.getElementById('INCT2').style.fill = 'var(--stateColor)';
 })
 
-document.getElementById('INHR2').addEventListener('click', function() {
+document.getElementById('INHR2').addEventListener('mousemove', function() {
     document.getElementById('map-igrpl-projects-info-right').style.display = 'none';
     document.getElementById('map-project-card-container-hr2').classList.add('map-project-card-containers');
     document.getElementById('map-project-card-container-up2').classList.remove('map-project-card-containers');
@@ -200,14 +200,14 @@ document.getElementById('INHR2').addEventListener('click', function() {
     document.getElementById('map-project-card-container-ct2').classList.remove('map-project-card-containers');
     // mapClick.play();
 })
-document.getElementById('INHR2').addEventListener('click', function() {
+document.getElementById('INHR2').addEventListener('mousemove', function() {
     document.getElementById('INHR2').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INUP2').style.fill = 'var(--stateColor)';
     document.getElementById('INAP2').style.fill = 'var(--stateColor)';
     document.getElementById('INCT2').style.fill = 'var(--stateColor)';
 })
 
-document.getElementById('INAP2').addEventListener('click', function() {
+document.getElementById('INAP2').addEventListener('mousemove', function() {
     document.getElementById('map-igrpl-projects-info-right').style.display = 'none';
     document.getElementById('map-project-card-container-ap2').classList.add('map-project-card-containers');
     document.getElementById('map-project-card-container-up2').classList.remove('map-project-card-containers');
@@ -215,14 +215,14 @@ document.getElementById('INAP2').addEventListener('click', function() {
     document.getElementById('map-project-card-container-ct2').classList.remove('map-project-card-containers');
     // mapClick.play();
 })
-document.getElementById('INAP2').addEventListener('click', function() {
+document.getElementById('INAP2').addEventListener('mousemove', function() {
     document.getElementById('INAP2').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INUP2').style.fill = 'var(--stateColor)';
     document.getElementById('INHR2').style.fill = 'var(--stateColor)';
     document.getElementById('INCT2').style.fill = 'var(--stateColor)';
 })
 
-document.getElementById('INCT2').addEventListener('click', function() {
+document.getElementById('INCT2').addEventListener('mousemove', function() {
     document.getElementById('map-igrpl-projects-info-right').style.display = 'none';
     document.getElementById('map-project-card-container-ct2').classList.add('map-project-card-containers');
     document.getElementById('map-project-card-container-up2').classList.remove('map-project-card-containers');
@@ -230,7 +230,7 @@ document.getElementById('INCT2').addEventListener('click', function() {
     document.getElementById('map-project-card-container-ap2').classList.remove('map-project-card-containers');
     // mapClick.play();
 })
-document.getElementById('INCT2').addEventListener('click', function() {
+document.getElementById('INCT2').addEventListener('mousemove', function() {
     document.getElementById('INCT2').style.fill = 'rgb(0, 60, 0)';
     document.getElementById('INUP2').style.fill = 'var(--stateColor)';
     document.getElementById('INHR2').style.fill = 'var(--stateColor)';
