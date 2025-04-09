@@ -511,13 +511,13 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: max-content;
-    gap: 32px;
+    gap: 18px;
 }
 
 .map-project-card {
     /* border: 1px solid rgba(0, 128, 0, 0.226); */
     border: 1px solid hsla(110, 100%, 40%, 0.2);
-    padding: 16px 16px 16px 0;
+    padding: 12px 12px 12px 0;
     height: max-content;
     display: flex;
     justify-content: flex-start;
@@ -543,7 +543,7 @@ h2 {
 }
 
 h5 {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     opacity: 0.5;
 }
 
