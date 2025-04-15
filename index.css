@@ -1408,14 +1408,15 @@ button.climate-impact-button {
     height: var(--client-height);
     position: absolute;
     left: 100%;
-    animation: autoRun 10s linear infinite;
-    animation-delay: calc((10s / var(--client-quantity)) * (var(--client-position) - 1) - 9s)!important;
+    animation: autoRun 30s linear infinite;
+    animation-delay: calc((30s / var(--client-quantity)) * (var(--client-position) - 1) - 29s)!important;
     transition: filter 0.5s;
     /* transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .client-slider .client-list .client-item img {
     width: 100%;
+    padding: 0 16px;
 }
 
 @keyframes autoRun{
@@ -1438,7 +1439,7 @@ button.climate-impact-button {
 }
 
 .client-slider[reverse="true"] .client-item{
-    animation: reversePlay 10s linear infinite;
+    animation: reversePlay 30s linear infinite;
 }
 
 @keyframes reversePlay{
