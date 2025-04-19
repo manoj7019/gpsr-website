@@ -4,6 +4,7 @@ window.addEventListener('load', () => {
 });
 
 const pagesToPreload = [
+    './ourBusiness.html',
     './projects.html',
     './esg.html',
     './ourTeam.html',
