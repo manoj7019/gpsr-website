@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 .arrow-icon {
@@ -599,6 +600,127 @@ img#card-logo {
     margin: auto;
     grid-column: 4/span 2;
 }
+
+/* JV & PArtnership Section */
+
+.jv-partnership-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    padding: 64px 0;
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 1300px;
+}
+
+.jv-partnership-section .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jv-partnership-section .head h2 {
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: darkgreen;
+}
+
+.jv-partnership-section .head p {
+    width: 500px;
+    text-align: center;
+}
+
+.jv-partnership-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 32px;
+    gap: 24px;
+    margin-top: -64px;
+}
+
+.jv-partnership-grid h3 {
+    font-size: 28px;
+    color: darkgreen;
+}
+
+.jv-partnership-grid p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.jv-partnership-grid .box img {
+    height: 100px;
+    width: auto;
+}
+
+.jv-partnership-grid .box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 24px;
+    align-self: flex-end;
+    border-radius: 8px;
+    /* box-shadow: 2px 0px 10px rgba(128, 128, 128, 0.322), 2px 1px 2px rgba(128, 128, 128, 0.7); */
+    box-shadow: 2px 0px 10px rgba(128, 128, 128, 0.322);
+}
+
+.jv-partnership-grid .box.one,
+.jv-partnership-grid .box.four {
+    background: rgba(0, 100, 0, 0.15);
+    height: max-content;
+}
+
+.jv-partnership-grid .box.three {
+    background: rgba(0, 100, 0, 0.05);
+    height: max-content;
+}
+
+.jv-partnership-grid .box.two,
+.jv-partnership-grid .box.five {
+    background: rgba(0, 100, 0);
+    color: white;
+    height: min-content;
+}
+
+
+.jv-partnership-grid .box.two h3,
+.jv-partnership-grid .box.five h3 {
+    color: white;
+}
+
+#arya-logo {
+    height: 150px;
+    width: auto;
+}
+
+#saf-one-logo {
+    width: 150px;
+    height: auto;
+}
+
+#ioc-gps-logo {
+    width: 180px;
+    height: auto;
+}
+
+#bpcl-logo, #oil-logo {
+    height: 80px;
+    width: auto;
+    margin-bottom: 8px;
+}
+
+#rocket-icon {
+    height: 128px;
+    width: auto;
+    position: absolute;
+    margin-top: -96px;
+}
+
+
 
 /* Footer */
 
