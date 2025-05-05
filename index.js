@@ -16,7 +16,6 @@
 // })
 
 
-
 const counts = document.querySelectorAll('.count');
 const speed = 110;
 
@@ -49,16 +48,16 @@ const observer = new IntersectionObserver((entries) => {
 const targetSection = document.querySelector('.our-climate-impact');
 observer.observe(targetSection);
 
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+const hamburger = document.querySelector(".resp-hamburger");
+const navMenu = document.querySelector(".resp-nav-menu");
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
-});
+})
 
-document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+document.querySelectorAll('.nav-link').forEach( n => n.addEventListener('click', () => {
     hamburger.classList.remove('active');
     navMenu.classList.remove('active');
-}));
+}))
 
