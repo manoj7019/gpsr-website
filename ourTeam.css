@@ -200,9 +200,9 @@ button.slide-nav-button:hover {
 
 .team-members {
     /* padding: 64px; */
-    width: 1200px;
+    width: 1000px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
 }
 
@@ -243,7 +243,7 @@ button.slide-nav-button:hover {
     background: white;
     width: fit-content;
     padding: 8px;
-    margin-top: 150px;
+    margin-top: 250px;
     transition: 0.5s ease-in-out;
     font-size: 12px;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -256,22 +256,22 @@ button.slide-nav-button:hover {
 }
 
 #promoters {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     /* padding: 0 144px; */
 }
 
-#promoters .team-member-card:nth-child(1) {
+/* #promoters .team-member-card:nth-child(1) {
     grid-column-start: 2;
-}
+} */
 
 #advisors {
-    grid-template-columns: repeat(5, 1fr);
-    /* padding: 0 150px; */
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 170px;
 }
 
-#advisors .team-member-card:nth-child(1) {
+/* #advisors .team-member-card:nth-child(1) {
     grid-column-start: 2;
-}
+} */
 
 .single-line-para {
     margin-bottom: 16px;
