@@ -551,6 +551,14 @@ p {
 
 .employee-benefits-info div p{
     font-size: 16px;
+    font-weight: 500;
+}
+
+.employee-benefits-info div h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: darkgreen;
+    margin-bottom: 16px;
 }
 
 p span {
