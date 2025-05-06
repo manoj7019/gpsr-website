@@ -639,6 +639,7 @@ h5 {
     transition: 0.3s;
     line-height: 24px;
     background: hsla(120, 100%, 20%, 0.1);
+    border-radius: 0 0 8px 8px;
 }
 
 /* #msw-waste-button, #pre-waste-button {
@@ -652,6 +653,7 @@ h5 {
 .project-waste-info img {
     width: 400px;
     height: 300px;
+    border-radius: 8px;
 }
 
 .project-waste-info div {

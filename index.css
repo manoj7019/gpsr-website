@@ -933,7 +933,7 @@ button.joint-venture-button {
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    max-width: 1366px;
+    max-width: 1300px;
 }
 
 .proweps-head h2 {
@@ -951,7 +951,7 @@ button.joint-venture-button {
 .main-grid {
     display: grid;
     gap: 48px;
-    max-width: 1366px;
+    max-width: 1300px;
     /* grid-template-columns: 100px 100px 100px; */
     /* grid-template-columns: 25% 25% 25%; */
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
@@ -961,10 +961,11 @@ button.joint-venture-button {
 }
 
 .proweps-image {
-    width: 700px;
-    height: 400px;
+    width: 600px;
+    height: 350px;
     border-radius: 0 8px 8px 0;
     margin-left: -16px;
+    align-self: center;
 }
 
 .logo1 {
@@ -1987,9 +1988,6 @@ body {
         width: 300px;
     }
 }
-
-
-
 
 /* Footer */
 
