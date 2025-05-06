@@ -38,6 +38,10 @@ button {
     box-sizing: border-box;
   }
 
+a {
+    text-decoration: none;
+}
+
 
 /* Animated Navbar & Header on Scroll  */
 
@@ -243,7 +247,7 @@ li {
         position: fixed;
         left: -100%;
         top: 60px;
-        gap: 0;
+        gap: 16px;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -254,6 +258,7 @@ li {
         height: 100vh;
         text-align: center;
         transition: all 0.3s;
+        /* z-index: 500; */
     }
 
     .resp-nav-item {
@@ -399,18 +404,52 @@ body, html {
     width: 18px;
 }
 
-/* What sets-us-apart */
+@media only screen and (max-width: 768px) {
+    .hero-video {
+        height: 90vh;
+    }
+    .hero-content {
+        padding: 18px;
+    }
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    .hero-content h2 {
+        font-size: 16px;
+        padding-right: 96px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0;
+    }
+    .hero-button-anchor, .hero-button-anchor.secondary {
+        width: max-content;
+        gap: 24px;
+    }
+    .hero-button-anchor:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+    a {
+        text-decoration: none;
+    }
+    a button {
+        font-size: 16px;
+    }
+    .arrow-icon {
+        width: 12px;
+    }
+}
 
-/* body {
-    background-color: white;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-} */
+/* What sets-us-apart */
 
 :root {
     --apart-cards: 5;
     --apart-cardHeight: 20em;
+    --apart-cardHeightMob: 16em;
     --apart-cardTopPadding: 1.5rem;
     --apart-cardMargin: 1rem;
+    --apart-cardMarginMob: 0.5rem;
 }
 
 .what-sets-us-apart-whole {
@@ -460,6 +499,16 @@ body, html {
 
 /* For Mobile Screen */
 @media screen and (max-width: 768px) {
+    .what-sets-us-apart-whole {
+        padding: 32px 16px;
+    }
+    .what-sets-us-apart-mobile h2 {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    .what-sets-us-apart-mobile p {
+        font-size: 16px;
+    }
     .what-sets-us-apart {
         display: flex;
         flex-direction: column;
@@ -470,8 +519,8 @@ body, html {
     }
     .what-sets-us-apart-mobile {
         display: block;
-        margin: 0 auto;
-        width: 80%;
+        margin: auto;
+        width: 100%;
     }
 }
 
@@ -610,13 +659,7 @@ body, html {
 .apart-card-body > .icon {
     height: 8em;
     width: 8rem;
-    /* margin-bottom: 0.5em; */
 }
-
-/* .apart-card-body > h2 {
-    font-size: 24px;
-    color: darkgreen;
-} */
 
 h2 {
     font-size: 28px;
@@ -631,6 +674,40 @@ h2 {
 
 .apart-card > #apart-card-body1 > div > p {
     font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+    .what-sets-us-apart .right {
+        width: 100vw;
+    }
+    #apart-cards {
+        grid-template-rows: repeat(var(--apart-cards), var(--apart-cardHeightMob));
+        gap: var(--cardMarginMob);
+        padding-bottom: calc(var(--apart-cards) * var(--apart-cardTopPadding));
+        margin-bottom: var(--apart-cardMargin)
+    }
+    .apart-card {
+        position: sticky;
+        top: 6rem;
+        padding-top: calc(var(--index) * var(--apart-cardTopPadding));
+    }
+    .apart-card-body {
+        height: 16rem;
+    }
+    .apart-card-body .icon {
+        width: 64px;
+        height: 64px;
+    }
+    .apart-card-body h2 {
+        font-size: 20px;
+        margin-bottom: -16px;
+    }
+    #apart-card-body1 div {
+        gap: 0;
+    }
+    .apart-card > #apart-card-body1 > div > p {
+        font-size: 16px;
+    }
 }
 
 /* Joint Ventures Section and Partnerships  */
@@ -739,7 +816,7 @@ h2 {
     padding: 24px;
 }
 
-.partnersip-section-cards {
+.partnership-section-cards {
     display: flex;
     margin: 0 auto;
     gap: 32px;
@@ -780,6 +857,58 @@ button.joint-venture-button {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+    .joint-venture-and-partnership-section {
+        width: 100vw;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 48px;
+    }
+    #subheadline {
+        font-size: 32px;
+        width: 100vw;
+        padding: 16px;
+    }
+    .joint-venture-section-cards, 
+    .partnership-section-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding: 16px;
+    }
+    .partnership-section-cards {
+        width: 100%;
+    }
+    .joint-venture-card {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 350px;
+    }
+    .joint-venture-pic, .partnership-pic {
+        width: 350px;
+        height: 250px;
+    }
+    .joint-venture-info {
+        gap: 8px;
+    }
+    .joint-venture-info p {
+        font-size: 16px;
+    }
+    .joint-venture-anchor {
+        width: max-content;
+    }
+    .joint-venture-anchor:hover {
+        transform: scale(1.05);
+    }
+    .arrow-icon-secondary {
+        width: 12px;
+    }
+}
+
 /* Proweps Section */
 
 .main-grid {
@@ -807,7 +936,7 @@ button.joint-venture-button {
     max-width: 1366px;
 }
 
-.proweps-head h1 {
+.proweps-head h2 {
     /* color: rgb(6, 226, 6); */
     /* color: rgb(0,255,0); */
     color: darkgreen;
@@ -911,18 +1040,42 @@ button.joint-venture-button {
     line-height: 24px;
 }
 
+@media only screen and (max-width:768px) {
+    .main-grid {
+        animation: none;
+    }
+    .proweps-section {
+        width: 100vw;
+        padding: 32px 16px;
+    }
+    .proweps-head {
+        width: 100vw;
+        padding: 16px;
+    }
+    .proweps-head h2 {
+        font-size: 32px;
+    }
+    
+    .proweps-head > p {
+        font-size: 16px;
+        padding: 0;
+        text-align: left;
+    }
+    .main-grid {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .proweps-image {
+        width: 400px;
+        height: 250px;
+    }
+    .grid-3 p, .grid-4 p{
+        font-size: 16px;
+    }
+}
+
 /* GPSR at a Glance */
-
-
-/* body {
-    background-color: #f0f0f0;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-} */
 
 .gpsr-at-a-glance {
     display: flex;
@@ -966,11 +1119,33 @@ button.joint-venture-button {
 }
 
 @media screen and (max-width: 768px) {
+    .gpsr-at-a-glance {
+        gap: 48px;
+        padding: 32px 16px;
+        z-index: 1000;
+        margin-bottom: 32px;
+        width: 100vw;
+    }
+    .gpsr-at-a-glance-head > h2 {
+        font-size: 32px;
+    }
+    .gpsr-at-a-glance-head > p {
+        font-size: 16px;
+        line-height: 24px;
+        width: 100vw;
+        padding: 0 24px;
+    }
     .gpsr-at-a-glance-card-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     .card {
         width: 50% - 40px;
+    }
+    a.gpsr-at-glance-anchor {
+        width: max-content;
+    }
+    button.gpsr-at-glance-button {
+        width: 100vw;
     }
 }
 
@@ -1296,6 +1471,33 @@ button.climate-impact-button {
     cursor: pointer;
 }
 
+@media only screen and (max-width:768px) {
+    .our-climate-impact {
+        padding: 48px 0;
+        gap: 16px;
+    }
+    .our-climate-impact-one > .headline {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        padding: 16px;
+        text-align: center;
+    }
+    .our-climate-impact-two {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* gap: 16px; */
+        padding: 0;
+        max-width: 1366px;
+    }
+    .counter:hover {
+        transform: scale(1.05);
+    }
+    .climate-impact-button-anchor {
+        width: max-content;
+    }
+}
+
 /* Our Business  */
 
 .our-business {
@@ -1466,6 +1668,16 @@ button.climate-impact-button {
         left: calc(var(--client-width) * -1);
     } to {
         left: 100%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .our-client {
+        padding: 48px 0;
+        margin-bottom: -32px;
+    }    
+    .our-client > h2 {
+        font-size: 32px;
     }
 }
 
@@ -1835,6 +2047,10 @@ footer {
     transform: scale(1.1);
 }
 
+.footer-mobile {
+    display: none;
+}
+
 .social-icons {
     display: flex;
     gap: 16px;
@@ -1847,4 +2063,24 @@ footer {
 .social-icon {
     height: 32px;
     width: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-container {
+        padding: 32px;
+    }
+    .footer-left p {
+        font-size: 12px;
+    }
+    .footer-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .footer-mobile a {
+        color: white;
+    }
+    .footer-right {
+        display: none;
+    }
 }
