@@ -281,6 +281,11 @@ span {
     max-width: 1300px;
 }
 
+.key-highlights h2 {
+    font-size: 32px;
+    color: darkgreen;
+}
+
 .key-highlights p {
     font-size: 16px;
     line-height: 24px;
