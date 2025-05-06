@@ -794,10 +794,11 @@ img#card-logo {
 
 .jv-partnership-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding: 32px;
     gap: 24px;
-    margin-top: -64px;
+    margin-top: 0px;
+    width: 1000px;
 }
 
 .jv-partnership-grid h3 {
