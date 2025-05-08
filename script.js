@@ -35,3 +35,16 @@ window.addEventListener('load', preloadPages);
 let Year = new Date().getFullYear();
 let thisYear = document.getElementById('thisYear')
 thisYear.textContent = Year;
+
+const hamburger = document.querySelector(".resp-hamburger");
+const navMenu = document.querySelector(".resp-nav-menu");
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+})
+
+document.querySelectorAll('.nav-link').forEach( n => n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+}))
