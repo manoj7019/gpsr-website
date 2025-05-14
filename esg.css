@@ -376,15 +376,16 @@ section {
 
 @media only screen and (max-width:768px) {
     .title {
-        font-size: 48px;
-        padding-left: 24px;
+        font-size: 36px;
+        padding-left: 0;
         margin-top: -512px;
+        width: 80vw;
     }
 
     .title img {
         height: 48px;
         width: 48px;
-        margin-top: -32px;
+        margin-top: -36px;
         margin-right: -48px;
     }
     .wrapper {
@@ -398,7 +399,7 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 80vh;
         transform-style: preserve-3d;
         z-index: -1;
     }
@@ -406,7 +407,7 @@ section {
     .midground,
     .foreground {
         position: absolute;
-        height: 100vh;
+        height: 80vh;
         width: 100%;
         object-fit: cover;
         z-index: -1;
@@ -866,14 +867,17 @@ html {
     .jv-center {
         width: 100vw;
         height: 70vh;
+        top: 0;
         overflow: hidden;
         background: rgba(128, 128, 128, 0.103);
         scroll-snap-align: center;
     }
     .jv-content {
+        position: sticky;
         padding: 16px;
         margin-top: -96px;
         width: 70vh;
+        overflow-x: hidden;
     }
     #icon4 {
         width: 96px;

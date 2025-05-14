@@ -406,13 +406,17 @@ body, html {
 
 @media only screen and (max-width: 768px) {
     .hero-video {
-        height: 90vh;
+        height: 70vh;
+    }
+    .hero-video video {
+        height: 70vh;
     }
     .hero-content {
         padding: 18px;
     }
     .hero-content h1 {
         font-size: 36px;
+        margin-top: 48px;
     }
     .hero-content h2 {
         font-size: 16px;
