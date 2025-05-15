@@ -866,16 +866,16 @@ html {
     }
     .jv-center {
         width: 100vw;
-        height: 70vh;
+        height: 600px;
         top: 0;
-        overflow: hidden;
+        overflow-y: hidden;
         background: rgba(128, 128, 128, 0.103);
         scroll-snap-align: center;
     }
     .jv-content {
         position: sticky;
         padding: 16px;
-        margin-top: -96px;
+        margin-top: -72px;
         width: 70vh;
         overflow-x: hidden;
     }
