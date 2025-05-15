@@ -364,7 +364,8 @@ li {
     .career-hero-section p {
         font-size: 16px;
         line-height: 24px;
-        width: 100vw;
+        width: 90vw;
+        padding-right: 24px;
     }
     .career-hero-section button:hover {
         transform: scale(1.05);
