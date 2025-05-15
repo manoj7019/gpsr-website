@@ -151,6 +151,146 @@ p {
     }
 }
 
+/* Responsive Navbar  */
+
+.header-two {
+    background-color: black;
+    z-index: 4;
+    display: none;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.header-two a {
+    text-decoration: none;
+    color: white;
+}
+
+.resp-navbar {
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.resp-nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.resp-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 128px;
+    height: auto;
+}
+
+.resp-nav-link {
+    /* transition: 0.7s ease-in-out; */
+}
+
+.resp-nav-link:hover {
+    color: lightgrey;
+}
+
+.resp-hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.resp-hamburger-bar {
+    display: block;
+    width: 25px;
+    height: 1px;
+    margin: 7px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media (max-width:768px) {
+    .resp-hamburger {
+        display: block;
+    }
+    /* .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    } */
+    .resp-hamburger.active .resp-hamburger-bar:nth-child(1) {
+        transform: translateY(4px) rotateZ(45deg);
+    }
+    .resp-hamburger.active .resp-hamburger-bar:nth-child(2) {
+        transform: translateY(-4px) rotateZ(-45deg);
+    }
+
+    .resp-navbar {
+        min-height: 60px;
+        padding: 0 16px;
+    }
+
+    .resp-logo {
+        width: 128px;
+    }
+
+    .resp-nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        gap: 16px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: black;
+        background: hsla(0, 100%, 1%, 0.589);
+        backdrop-filter: blur(2rem);
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: all 0.3s;
+        /* z-index: 500; */
+    }
+
+    .resp-nav-item {
+        margin: 16px 0;
+    }
+
+    .resp-nav-menu.active {
+        left: 0;
+    }
+}
+
+.hero {
+    width: 100%;
+}
+
+
+.nav-link.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 129, 3);
+    padding: 8px 16px;
+    /* border-radius: 8px; */
+}
+
+@media only screen and (max-width: 768px) {
+    .header-one {
+        display: none;
+    }
+    .header-two {
+        display: block;
+    }
+}
+
+
 /* Career Hero Section  */
 
 .career-hero-section p {
@@ -206,6 +346,31 @@ p {
     transform: scale(1.125);
     background: darkgreen;
     color: white;
+}
+
+@media only screen and (max-width:768px) {
+    .career-hero-section {
+        object-fit: cover;
+        height: 500px;
+        background-position: right;
+        width: 100vw;
+        gap: 16px;
+        color: white;
+        padding: 16px;
+    }
+    .career-hero-section h1 {
+        font-size: 32px;
+    }
+    .career-hero-section p {
+        font-size: 16px;
+        line-height: 24px;
+        width: 100vw;
+    }
+    .career-hero-section button:hover {
+        transform: scale(1.05);
+        background: darkgreen;
+        color: white;
+    }
 }
 
 /* Why GPS Section  */
@@ -264,6 +429,23 @@ p {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+@media only screen and (max-width:768px) {
+    .career-why-gpsr-section {
+        padding: 32px 16px;
+        text-align: center;
+        gap: 32px;
+        width: 100vw;
+    }
+    .career-why-gpsr-section-head > h2 {
+        font-size: 24px;
+    }
+    .why-gpsr-section-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
 }
 
 /* Slider  */
@@ -438,6 +620,24 @@ p {
     height: 100%;
 }
 
+@media only screen and (max-width:768px) {
+    h2 {
+        font-size: 24px;
+    }
+    .career-work-life-balance .head p {
+        font-size: 16px;
+        width: 100vw;
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 16px;
+        font-weight: 500;
+    }
+    .career-work-life-balance-slider {
+        width: 100vw;
+    }
+}
+
 /* Projects based on Waste - Section  */
 
 .employee-benefits-container {
@@ -566,6 +766,48 @@ p span {
     font-weight: 700;
 }
 
+@media only screen and (max-width:768px) {
+    .employee-benefits-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 32px 0;
+    }
+    .employee-benefits-buttons {
+        /* width: 100vw; */
+        gap: 32px;
+    }
+    .employee-benefits-button {
+        gap: 8px;
+        padding: 32px;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+        width: calc(((100vw)/4) - 32px);
+    }
+    .employee-benefits-button p{
+        font-size: 12px;
+        padding: 8px;
+        line-height: 18px;
+        font-weight: 400;
+    }
+    .active-employee-benefits-button p {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 600;
+    }
+    .employee-benefits-button-icon {
+        width: 48px;
+    }
+    .employee-benefits-info {
+        flex-direction: column;
+        gap: 32px;
+        width: 100vw;
+        padding: 32px;
+        line-height: 24px;
+    }
+}
+
 /* Last Call to Action section*/
 
 .career-last-cta-section {
@@ -605,6 +847,13 @@ p span {
     transform: scale(1.125);
     background: white;
     color: darkgreen;
+}
+
+@media only screen and (max-width:768px) {
+    .career-last-cta-section > p {
+        font-size: 16px;
+        font-weight: 500;
+    }
 }
 
 /* Footer  */
@@ -662,6 +911,10 @@ footer {
     transform: scale(1.1);
 }
 
+.footer-mobile {
+    display: none;
+}
+
 .social-icons {
     display: flex;
     gap: 16px;
@@ -674,4 +927,25 @@ footer {
 .social-icon {
     height: 32px;
     width: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-container {
+        padding: 32px;
+        width: 100vw;
+    }
+    .footer-left p {
+        font-size: 12px;
+    }
+    .footer-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .footer-mobile a {
+        color: white;
+    }
+    .footer-right {
+        display: none;
+    }
 }
