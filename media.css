@@ -756,7 +756,7 @@ button.old-news-button:hover {
 /* Older News Section  */
 
 .older-news-section {
-  max-width: 1300px;
+  width: 1300px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
