@@ -183,11 +183,10 @@ li {
 
 .resp-nav-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 60px;
 }
-
 
 .resp-logo {
     display: flex;
@@ -246,10 +245,11 @@ li {
     .resp-nav-menu {
         position: fixed;
         left: -100%;
-        top: 60px;
+        /* top: 60px; */
+        top: 0;
         gap: 16px;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         background-color: black;
         background: hsla(0, 100%, 1%, 0.589);
