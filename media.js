@@ -52,7 +52,7 @@ let oldestNews = document.getElementById('oldest-news-section');
 let viewMoreBtn = document.getElementById('view-more-btn');
 
 viewMoreBtn.addEventListener('click', () => {
-    oldestNews.style.display = 'flex';
+    oldestNews.style.display = 'grid';
     viewMoreBtn.style.display = 'none';
 })
 

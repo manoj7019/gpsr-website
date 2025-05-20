@@ -163,6 +163,144 @@ body, button {
   }
 }
 
+/* Responsive Navbar  */
+
+.header-two {
+    background-color: black;
+    z-index: 4;
+    display: none;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.header-two a {
+    text-decoration: none;
+    color: white;
+}
+
+.resp-navbar {
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.resp-nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.resp-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 128px;
+    height: auto;
+}
+
+.resp-nav-link {
+    /* transition: 0.7s ease-in-out; */
+}
+
+.resp-nav-link:hover {
+    color: lightgrey;
+}
+
+.resp-hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.resp-hamburger-bar {
+    display: block;
+    width: 25px;
+    height: 1px;
+    margin: 7px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media (max-width:768px) {
+    .resp-hamburger {
+        display: block;
+    }
+    /* .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    } */
+    .resp-hamburger.active .resp-hamburger-bar:nth-child(1) {
+        transform: translateY(4px) rotateZ(45deg);
+    }
+    .resp-hamburger.active .resp-hamburger-bar:nth-child(2) {
+        transform: translateY(-4px) rotateZ(-45deg);
+    }
+
+    .resp-navbar {
+        min-height: 60px;
+        padding: 0 16px;
+    }
+
+    .resp-logo {
+        width: 128px;
+    }
+
+    .resp-nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        gap: 16px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: black;
+        background: hsla(0, 100%, 1%, 0.589);
+        backdrop-filter: blur(2rem);
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: all 0.3s;
+        /* z-index: 500; */
+    }
+
+    .resp-nav-item {
+        margin: 16px 0;
+    }
+
+    .resp-nav-menu.active {
+        left: 0;
+    }
+}
+
+.hero {
+    width: 100%;
+}
+
+.nav-link.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 129, 3);
+    padding: 8px 16px;
+    /* border-radius: 8px; */
+}
+
+@media only screen and (max-width: 768px) {
+    .header-one {
+        display: none;
+    }
+    .header-two {
+        display: block;
+    }
+}
+
 /* Media Hero Section  */
 
 .media-hero-section p {
@@ -198,6 +336,23 @@ body, button {
   font-weight: 600;
   margin-bottom: 16px;
   width: 700px;
+}
+
+@media only screen and (max-width:768px) {
+  .media-hero-section {
+    width: 100vw;
+    gap: 16px;
+    padding: 16px;
+  }
+  .media-hero-section h1 {
+    font-size: 32px;
+    width: 100vw;
+  }
+  .media-hero-section p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100vw;
+  }
 }
 
   /* Wrapper  */
@@ -282,6 +437,10 @@ body, button {
   @media screen and (max-width: 768px) {
     .slider {
       height: 400px;
+      width: 100vw;
+    }
+    h2 {
+      font-size: 24px;
     }
   }
 
@@ -399,6 +558,18 @@ body, button {
       left: calc(var(--client-width) * -1);
   } to {
       left: 100%;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .our-client {
+    gap: 24px;
+    padding: 32px 0;
+    background: rgba(128, 128, 128, 0.034);
+  }
+  .our-client > h2 {
+    font-size: 24px;
+    /* color: black; */
   }
 }
 
@@ -553,12 +724,38 @@ button.old-news-button:hover {
   color: darkgreen;
 }
 
+@media only screen and (max-width:768px) {
+  .our-old-news-cards {
+    width: 100vw;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    padding: 24px 0;
+  }
+  .our-old-news-card {
+    width: 100%;
+    /* padding: 16px; */
+  }
+  .our-old-news-section h2 {
+    font-size: 24px;
+  }
+    .our-old-news-card:hover {
+    transform: none;
+  }
+  .our-old-news-card > div {
+    padding: 16px;
+    gap: 16px;
+  }
+  .our-old-news-card > a > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 
 /* Older News Section  */
 
 .older-news-section {
-  /* background: black;
-  color: white; */
   max-width: 1300px;
   margin: 0 auto;
   display: grid;
@@ -588,6 +785,18 @@ button.old-news-button:hover {
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+@media only screen and (max-width:768px) {
+  .older-news-section {
+    width: 100vw;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    padding: 0 16px;
+  }
+  .our-old-news-card {
+    width: 100vw;
+  }
 }
 
 /* Work Life Balance */
@@ -777,6 +986,34 @@ iframe {
   display: none;
 }
 
+@media only screen and (max-width:768px) {
+  .inside-gpsr .head {
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px 16px;
+    width: 100vw;
+    margin: 0 auto;
+  }
+  iframe {
+    width: 100vw;
+    height: 200px;
+    margin-bottom: 8px;
+  }
+  .inside-gpsr .head .videos-tab ul {
+    gap: 16px;
+    padding: 16px 0;
+  }
+  .inside-gpsr .head .videos-tab ul li:hover {
+    transform: none;
+  }
+  .video-section {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+    padding: 16px;
+    width: 100vw;
+  }
+}
+
 /* Photo Gallery Section */
 
 .photo-gallery .head {
@@ -901,6 +1138,30 @@ button.media-kit-button:hover {
   color: white;
 }
 
+@media only screen and (max-width:768px) {
+  .contact-us-head {
+    padding: 64px;
+    gap: 16px;
+    width: 100vw;
+  }
+  .contact-us-head h2 {
+    font-size: 24px;
+  }
+  .contact-us-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  button.contact-us-button,
+  button.media-kit-button {
+    width: 50vw;
+  }
+  button.contact-us-button:hover,
+  button.media-kit-button:hover {
+    transform: none;
+  }
+} 
+
 /* Footer  */
 
 footer {
@@ -957,6 +1218,10 @@ footer {
   transform: scale(1.1);
 }
 
+.footer-mobile {
+    display: none;
+}
+
 .social-icons {
   display: flex;
   gap: 16px;
@@ -969,4 +1234,26 @@ footer {
 .social-icon {
   height: 32px;
   width: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-container {
+        padding: 32px;
+        width: 100vw;
+    }
+    .footer-left p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .footer-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .footer-mobile a {
+        color: white;
+    }
+    .footer-right {
+        display: none;
+    }
 }
