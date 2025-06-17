@@ -280,10 +280,6 @@ li {
     }
 }
 
-.hero {
-    width: 100%;
-}
-
 .nav-link.contact {
     display: flex;
     justify-content: center;
@@ -353,6 +349,20 @@ li {
     font-size: 16px;
     line-height: 24px;
     width: 100vw;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .media-hero-section,
+  .media-hero-section h1,
+  .media-hero-section p,
+  .our-old-news-cards,
+  .older-news-section,
+  .inside-gpsr .head,
+  .video-section,
+  iframe,
+  .footer-container {
+    width: 100%;
   }
 }
 

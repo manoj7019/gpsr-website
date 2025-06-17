@@ -9,6 +9,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 .arrow-icon {
@@ -99,9 +100,9 @@ body {
     text-align: left;
 }
 
-.nav-one-item:nth-child(2) {
-    /* color: #4dff56; */
-}
+/* .nav-one-item:nth-child(2) {
+    color: #4dff56; 
+} */
 
 .nav-one-item:hover {
     cursor: pointer;
@@ -194,6 +195,7 @@ li {
     background-color: white;
 }
 
+
 @media (max-width:768px) {
     .resp-hamburger {
         display: block;
@@ -262,6 +264,7 @@ li {
         display: block;
     }
 }
+
 
 /* Hero  */
 .circle-div {
@@ -396,7 +399,7 @@ p {
 @media only screen and (max-width:768px) {
     .hero {
         padding: 64px 0;
-        width: 100vw;
+        width: 100%;
     }
     .hero-left, .hero-right {
         gap: 16px;
@@ -407,11 +410,11 @@ p {
     }
     h1 {
         font-size: 30px;
-        width: 100vw;
+        width: 100%;
         /* padding: 16px; */
     }
     .hero-center p {
-        width: 100vw;
+        width: 100%;
     }
     p {
         font-size: 16px;
@@ -434,7 +437,7 @@ p {
 @media only screen and (max-width:768px) {
     .paragraph {
         padding: 32px 16px ;
-        width: 100vw;
+        width: 100%;
     }
 }
 
@@ -512,7 +515,7 @@ img#card-logo {
 @media only screen and (max-width:768px) {
     .key-highlights {
         padding: 0px;
-        width: 100vw;
+        width: 100%;
     }
     .key-highlights h2 {
         font-size: 24px;
@@ -522,7 +525,7 @@ img#card-logo {
         width: 32px;
     }
     .key-highlights .cards {
-        width: 100vw;
+        width: 100%;
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
         padding: 32px 16px;
@@ -825,7 +828,7 @@ img#card-logo {
         font-size: 24px;
     }
     .tech-content > p{
-        width: 100vw;
+        width: 100%;
         padding: 16px;
     }
     .tech-content > .cards {
@@ -951,7 +954,7 @@ img#card-logo {
         align-items: center;
         padding: 64px 0;
         margin: 0 auto;
-        width: 100vw;
+        width: 100%;
         text-align: center;
     }
     .engg-software-section h2 {
@@ -963,7 +966,7 @@ img#card-logo {
         z-index: 1;
     }
     .engg-center p {
-        width: 100vw;
+        width: 100%;
         padding: 16px;
     }
     .engg-icons {
@@ -976,7 +979,7 @@ img#card-logo {
         height: 64px;
     }
     .engg-center img {
-        width: 100vw;
+        width: 100%;
         height: auto;
         padding: 0 16px;
         border-radius: 16px;
@@ -1037,7 +1040,7 @@ img#card-logo {
         padding: 16px;
         gap: 16px;
         margin: 32px auto;
-        width: 100vw;
+        width: 100%;
         background: none;
     }
     .csl-section h2 {
@@ -1201,16 +1204,16 @@ img#card-logo {
         gap: 32px;
         padding: 16px;
         margin: -64px auto 32px auto;
-        width: 100vw;
+        width: 100%;
     }
     .jv-partnership-section .head h2 {
         font-size: 24px;
         margin-bottom: 10px;
-        width: 100vw;
+        width: 100%;
         text-align: center;
     }
     .jv-partnership-section .head p {
-        width: 100vw;
+        width: 100%;
         padding: 0 24px;
     }
     .jv-partnership-grid {
@@ -1218,7 +1221,7 @@ img#card-logo {
         padding: 16px;
         gap: 24px;
         margin-top: 0px;
-        width: 100vw;
+        width: 100%;
     }
 
     .jv-partnership-grid .box {
@@ -1341,7 +1344,7 @@ img#card-logo {
         margin: auto;
         padding: 16px;
         padding-bottom: 32px;
-        width: 100vw;
+        width: 100%;
     }
     .project-execution-section .left {
         width: 100%;
@@ -1442,10 +1445,10 @@ img#card-logo {
     .group-entities-section {
         gap: 32px;
         padding: 32px 16px;
-        width: 100vw;
+        width: 100%;
     }
     .group-entities-section .head{
-        width: 100vw;
+        width: 100%;
     }
     .group-entities-section .head h2{
         font-size: 24px;
@@ -1541,7 +1544,7 @@ footer {
 @media only screen and (max-width: 768px) {
     .footer-container {
         padding: 32px;
-        width: 100vw;
+        width: 100%;
     }
     .footer-container a {
         text-decoration: none;

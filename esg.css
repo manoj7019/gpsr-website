@@ -186,6 +186,7 @@ li {
     .resp-hamburger {
         display: block;
     }
+    
     /* .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     } */
@@ -221,7 +222,7 @@ li {
         height: 100vh;
         text-align: center;
         transition: all 0.3s;
-        /* z-index: 500; */
+        z-index: 9999;
     }
 
     .resp-nav-item {
