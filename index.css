@@ -973,6 +973,32 @@ button.joint-venture-button {
     border-radius: 8px;
 }
 
+@media only screen and (max-width:768px) {
+    .our-finance-partners h2 {
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+    .our-finance-partners p {
+        font-size: 16px;
+        width: 90%;
+        margin: auto;
+    }
+    .our-finance-partners {
+        width: calc(100% - 32px);
+        margin: 48px 16px;
+    }
+
+    .bank-partner-logos {
+        grid-template-columns: repeat(1,1fr);
+        gap: 16px;
+    }
+    .bank-logo {
+        width: auto;
+        height: 96px;
+        margin-bottom: -32px;
+    }
+}
+
 /* Proweps Section */
 
 .main-grid {
