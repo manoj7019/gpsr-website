@@ -919,6 +919,60 @@ button.joint-venture-button {
     }
 }
 
+/* Our Finance Partners */
+
+.our-finance-partners {
+    width: 1000px;
+    margin: 32px auto 96px auto;
+    text-align: center;
+}
+
+.our-finance-partners h2 {
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+.our-finance-partners p {
+    font-size: 24px;
+}
+
+.bank-partner-logos {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+}
+
+.bank-logo {
+    width: auto;
+    height: 128px;
+    margin-bottom: -48px;
+}
+
+.bank-partner-logos .one {
+    background-color: rgba(0, 128, 0, 0.116);
+    padding: 32px;
+    border-radius: 8px;
+}
+
+.bank-partner-logos .two {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.bank-partner-logos .two .mezzanine-financing {
+    background-color: rgba(0, 128, 0, 0.308);
+    padding: 32px;
+    border-radius: 8px;
+}
+
+.bank-partner-logos .two .equity-investors {
+    background-color: rgba(0, 128, 0, 0.199);
+    padding: 32px;
+    border-radius: 8px;
+}
+
 /* Proweps Section */
 
 .main-grid {
