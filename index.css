@@ -1056,7 +1056,7 @@ button.joint-venture-button {
     height: 350px;
     border-radius: 0 8px 8px 0;
     margin-left: -16px;
-    align-self: center;
+    align-self: baseline;
 }
 
 .logo1 {
@@ -1096,7 +1096,7 @@ button.joint-venture-button {
 }
 
 .grid-3 h3, .grid-4 h3 {
-    text-align: center;
+    text-align: left;
     color: darkgreen;
 }
 
