@@ -801,6 +801,21 @@ h5 {
     font-size: 36px;
 }
 
+@media only screen and (max-width:768px) {
+    .mmbtu {
+        margin: auto;
+        padding: 16px;
+        justify-content: flex-start;
+        gap: 48px;
+    }
+    .mmbtu div h2 {
+        font-size: 16px;
+    }
+    .mmbtu div h3 {
+        font-size: 12px;
+    }
+}
+
 /* Projects based on Waste - Section  */
 
 .projects-waste-container {
