@@ -790,6 +790,17 @@ h5 {
     }
 }
 
+.mmbtu {
+    display: flex;
+    margin: -24px auto 0 auto;
+    justify-content: center;
+    gap: 64px;
+}
+
+.mmbtu div h2 {
+    font-size: 36px;
+}
+
 /* Projects based on Waste - Section  */
 
 .projects-waste-container {
