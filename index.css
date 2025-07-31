@@ -448,11 +448,11 @@ body, html {
 /* What sets-us-apart */
 
 :root {
-    --apart-cards: 5;
+    --apart-cards: 6;
     --apart-cardHeight: 20em;
     --apart-cardHeightMob: 16em;
     --apart-cardTopPadding: 1.5rem;
-    --apart-cardMargin: 1rem;
+    --apart-cardMargin: 0rem;
     --apart-cardMarginMob: 0.5rem;
 }
 
@@ -606,6 +606,9 @@ body, html {
 }
 #apart-card5 {
     --index: 5;
+}
+#apart-card6 {
+    --index: 6;
 }
 
 .apart-card {
