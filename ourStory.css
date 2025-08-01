@@ -16,6 +16,14 @@ h1 {
   margin-bottom: 16px;
 }
 
+h3 {
+  font-size: 32px;
+}
+
+img {
+  border-radius: 8px;
+}
+
 /* Animated Navbar & Header on Scroll  */
 
 :root {
@@ -165,7 +173,7 @@ h1 {
   }
   
   section.dummy-section {
-    height: 70vh;
+    /* height: 1500px; */
     width: 1000px;
     margin: 0 auto;
     padding: 16px 0;
@@ -203,6 +211,44 @@ h1 {
     z-index: 10;
   }
 
+/* Early days */
+
+.early-days {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin: 24px 0;
+}
+
+.early-days .bioUrja-locations {
+  display: flex;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.early-days .bioUrja-locations .bioUrja-image {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.early-days .bioUrja-locations .bioUrja-image img {
+  width: 350px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.early-days .bioUrja-locations .bioUrja-image p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.early-days .bioUrja-para {
+  text-align: left;
+}
+
+
   /* Timeline  */
 
   img {
@@ -220,24 +266,17 @@ a:hover {
 }
 
 b {
-    background: -webkit-linear-gradient(to right, #6aac00, #4dff56);
-    background: linear-gradient(to right, #6aac00, #4dff56);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: darkgreen;
 }
 
 .margin-bottom-medium h2 {
     font-size: 48px;
-    background: #ff6a00;
-    background: -webkit-linear-gradient(to right, #6aac00, #4dff56);
-    background: linear-gradient(to right, #6aac00, #4dff56);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: darkgreen;
 }
 
 .paragraph-large {
     font-size: 24px;
-    color: #fff;
+    color: black;
 }
 
 .inline-block {
@@ -266,7 +305,7 @@ b {
 }
 
 .section-timeline-heading {
-    background-color: #0a0a0a;
+    background-color: #ffffff;
 }
 
 .padding-vertical-xlarge {
@@ -313,8 +352,9 @@ b {
     justify-content: center;
 }
 
+
 .timeline-date-text {
-    color: white;
+    /* color: white; */
     font-size: 48px;
     font-weight: 500;
     position: sticky;
@@ -322,7 +362,7 @@ b {
 }
 
 .timeline-text {
-    color: white;
+    /* color: white; */
     font-size: 24px;
     font-weight: 500;
     line-height: 1.5;
@@ -340,7 +380,7 @@ b {
     max-height: 16px;
     position: sticky;
     top: 50vh;
-    box-shadow: 0 0 0 8px #0a0a0a;
+    box-shadow: 0 0 0 8px #c7c7c7;
 }
 
 .timeline-progress {
@@ -362,9 +402,16 @@ b {
     inset: 0 auto 50vh;
 }
 
+/* Timeline Image Wrapper */
+.timeline-image-wrapper img {
+  width: 200px;
+  height: auto;
+  margin-top: -48px;
+}
+
 .section-timeline {
     z-index: -3;
-    background-color: #0a0a0a;
+    /* background-color: #0a0a0a; */
     position: relative;
 }
 
@@ -403,14 +450,14 @@ b {
 }
 
 .overlay-fade-top {
-    background-image: linear-gradient(#0a0a0a, #0a0a0a00);
+    /* background-image: linear-gradient(#0a0a0a, #0a0a0a00); */
     height: 80px;
     position: absolute;
     inset: 0% 0% auto;
 }
 
 .overlay-fade-dot {
-    background-image: linear-gradient(to top, #0a0a0a00, #0a0a0a);
+    /* background-image: linear-gradient(to top, #0a0a0a00, #0a0a0a); */
     height: 80px;
     position: absolute;
     inset: auto 0% 0%;
@@ -470,7 +517,7 @@ b {
   margin: 0 auto;
   text-align: center;
   padding: 64px;
-  gap: 32px;
+  gap: 64px;
   background: white;
   z-index: 1000;
   position: relative;
@@ -492,7 +539,7 @@ b {
 
 .investors .head p {
   font-size: 24px;
-  font-weight: 500;
+  line-height: 36px;
   width: 900px;
 }
 
