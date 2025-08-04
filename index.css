@@ -846,7 +846,7 @@ h2 {
     background: darkgreen;
     color: white;
     cursor: pointer;
-    width: 23%;
+    width: max-content;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -920,6 +920,30 @@ button.joint-venture-button {
     .arrow-icon-secondary {
         width: 12px;
     }
+}
+
+.arya-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin: 0 auto;
+    width: 900px;
+}
+
+.arya-section div{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.arya-section .info {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 24px;
+    font-size: 18px;
+    line-height: 27px;
 }
 
 /* Our Finance Partners */
