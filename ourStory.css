@@ -267,6 +267,7 @@ a:hover {
 
 b {
     color: darkgreen;
+    font-weight: 700;
 }
 
 .margin-bottom-medium h2 {
@@ -287,6 +288,7 @@ b {
 .page-wrapper {
     z-index: 0;
     position: relative;
+    text-align: center;
 }
 
 .container {
@@ -316,7 +318,7 @@ b {
 .timeline-main-heading-wrapper {
     color: #fff;
     text-align: center;
-    max-width: 640px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
