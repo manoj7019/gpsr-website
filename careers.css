@@ -375,6 +375,21 @@ li {
     }
 }
 
+/* Open positions */
+
+.open-positions {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin: 64px auto;
+    align-items: center;
+    gap: 32px;
+}
+
+.open-positions h2 {
+    color: darkgreen;
+}
+
 /* Why GPS Section  */
 
 .career-why-gpsr-section {
